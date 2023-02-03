@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "es2016", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+        "module": "ESNext", /* Specify what module code is generated. */
+        "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */                  /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+        "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+        "strict": true, /* Enable all strict type-checking options. */
+        "skipLibCheck": true, // 跳过所有声明文件的类型检查
+        // TODO des
+        "baseUrl": "./",
+        "allowJs": true,  // 允许编译 JavaScript 文件
+        "jsx": "react", // .tsx文件中支持JSX
+        // todo des
+        "paths": {
+            "@/*": ["src/*"],
+            "Components/*": ["src/components/*"],
+            "Utils/*": ["src/utils/*"]
+        },
+        // todo des
+        "experimentalDecorators": true, // 启用实验性的ES装饰器
+        
+        "moduleResolution": "node", // 制定模块解析策略
+        "resolveJsonModule": true, // 允许使用 .json 扩展名导入的模块
+        "allowSyntheticDefaultImports": true, // 允许从没有默认导出的模块进行默认导入
+        "noEmit": true, // 不输出, 不编译代码，只执行类型检查
+
+        // todo add other modules
+        // "target": "ES6",
+        // "lib": ["dom", "dom.iterable", "esnext"],
+        // "isolatedModules": true,
+        // "emitDecoratorMetadata": true,
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "build"]
+}
