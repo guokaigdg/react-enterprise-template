@@ -14,13 +14,10 @@ const cssLoaders = (importLoaders) => [
     {
         loader: 'css-loader',
         options: {
-            // modules: true,
-            sourceMap: isDevelopment,
-            importLoaders,
-        },
-    },
-    {
-        // loader: 'scoped-css-loader',
+            modules: false,
+            sourceMap: isDevelopment, // 开发环境开启
+            importLoaders
+        }
     },
     {
         loader: 'postcss-loader',
@@ -33,20 +30,20 @@ const cssLoaders = (importLoaders) => [
                         {
                             autoprefixer: {
                                 grid: true,
-                                flexbox: 'no-2009',
+                                flexbox: 'no-2009'
                             },
-                            stage: 3,
-                        },
-                    ],
-                ].filter(Boolean),
-            },
-        },
-    },
+                            stage: 3
+                        }
+                    ]
+                ].filter(Boolean)
+            }
+        }
+    }
 ];
 
 const config = {
     entry: {
-        app: paths.appIndex,
+        app: paths.appIndex
     },
     cache: {
         // 缓存,cache.type 设置为 'filesystem' 是会开放更多的可配置项。
@@ -54,8 +51,8 @@ const config = {
         type: 'filesystem',
         buildDependencies: {
             // 是一个针对构建的额外代码依赖的数组对象。webpack 将使用这些项和所有依赖项的哈希值来使文件系统缓存失效。
-            config: [__filename],
-        },
+            config: [__filename]
+        }
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.json'],
@@ -63,8 +60,8 @@ const config = {
             '@': paths.appSrc,
             mock: paths.appMock,
             Components: paths.appSrcComponents,
-            Utils: paths.appSrcUtils,
-        },
+            Utils: paths.appSrcUtils
+        }
     },
     module: {
         rules: [
@@ -72,11 +69,11 @@ const config = {
                 test: /\.(tsx?|js)$/,
                 loader: 'babel-loader', // 使用缓存
                 options: {cacheDirectory: true},
-                exclude: [/node_modules/, /(.|_)min\.js$/],
+                exclude: [/node_modules/, /(.|_)min\.js$/]
             },
             {
                 test: /\.css$/,
-                use: cssLoaders(1),
+                use: cssLoaders(1)
             },
             {
                 test: /\.less$/,
@@ -85,10 +82,10 @@ const config = {
                     {
                         loader: 'less-loader',
                         options: {
-                            sourceMap: isDevelopment,
-                        },
-                    },
-                ],
+                            sourceMap: isDevelopment
+                        }
+                    }
+                ]
             },
             {
                 test: /\.scss$/,
@@ -97,11 +94,10 @@ const config = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            sourceMap: isDevelopment,
-                            additionalData: '@import "@/styles/variables.scss";', // TODO:
-                        },
-                    },
-                ],
+                            sourceMap: isDevelopment
+                        }
+                    }
+                ]
             },
             {
                 test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
@@ -123,21 +119,21 @@ const config = {
                             return true;
                         }
                         return false;
-                    },
-                },
+                    }
+                }
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2?)$/,
-                type: 'asset/resource',
-            },
-        ],
+                type: 'asset/resource'
+            }
+        ]
     },
     plugins: [
         new webpack.DefinePlugin(paths.appDefineVariable),
         new HtmlWebpackPlugin({
             template: paths.appHtml,
             cache: true,
-            env: process.env.ENV || '',
+            env: process.env.ENV || ''
         }),
         new CopyPlugin({
             patterns: [
@@ -149,25 +145,25 @@ const config = {
                     globOptions: {
                         dot: true,
                         gitignore: true,
-                        ignore: ['**/index.html'],
-                    },
-                },
-            ],
+                        ignore: ['**/index.html']
+                    }
+                }
+            ]
         }),
         new WebpackBar({
             name: isDevelopment ? 'RUNNING' : 'BUNDLING',
-            color: isDevelopment ? '#52c41a' : '#722ed1',
+            color: isDevelopment ? '#52c41a' : '#722ed1'
         }),
         new ForkTsCheckerWebpackPlugin({
             typescript: {
-                configFile: paths.appTsConfig,
-            },
-        }),
+                configFile: paths.appTsConfig
+            }
+        })
         // new PreloadWebpackPlugin({
         //     rel: 'prefetch', // 预加载
         //     include: ['book'],
         // }),
-    ],
+    ]
 };
 
 module.exports = config;
