@@ -1,0 +1,8 @@
+.dashboard-root {
+    & > span {
+        display: block;
+        width: 100%;
+        font-weight: 800;
+        font-size: 110px;
+    }
+}

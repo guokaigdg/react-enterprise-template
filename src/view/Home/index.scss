@@ -1,0 +1,18 @@
+.home-root {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+
+    .home-tab {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 300px;
+        height: 800px;
+        padding: 10px;
+        font-size: 25px;
+        background: #00bfff;
+        border-radius: 10px;
+    }
+}

@@ -1,23 +1,21 @@
 <h1 align="center">react 模板</h1>
 <br/>
 
-
 ## 👨🏻‍💻 项目说明
+
 react 模板
 
 ## 🚀 技术栈
 
--   React
--   react-dom
+-   React v18
+-   react-dom v18
 -   React Hook
--   TypeScript
--   webpack
+-   TypeScript v4
+-   webpack v5
 -   axios
 -   mobx-react-lite
--   react-router-dom
--   react-router-config
+-   react-router-dom v6
 -   postcss-px-to-viewport
-
 
 ## ⌛️ 安装项目依赖
 
@@ -48,18 +46,20 @@ npm run build:prod  // 线上环境
 
 ## 💡 分支说明
 
-| 分支 | 说明 |
-| -- | -- |
-| main | 主分支 |
-| dev | 开发分支 |
+| 分支 | 说明     |
+| ---- | -------- |
+| main | 主分支   |
+| dev  | 开发分支 |
 
 ## 代码提交规范
+
 ```
 git <type>: <subject>
 git commit -m “feat: 项目初始化”
 ```
 
-### type参考: 
+### type 参考:
+
 ```
 fix       🐛 Bug修复
 feature   ✨ 引入新特性
@@ -80,7 +80,7 @@ merge     🔀 合并分支
 ## 📂 目录结构
 
 ```
-    ├── .vscode                         
+    ├── .vscode
     │   └──setting.json                 # 先于vscode全局的settings.json配置
     ├── doc                             # 开发文档记录
     ├── webpack                         # 打包编译
@@ -88,7 +88,7 @@ merge     🔀 合并分支
     │       ├── webpack.common.js       # 基础配置
     │       ├── webpack.dev.js          # 开发环境配置
     │       └──webpack.prod.js          # 生产环境配置
-    ├── pubilc                          
+    ├── pubilc
     │   ├──favicon.ico                  # HTML图标
     │   └──index.html                   # HTML入口模板
     ├── src
@@ -107,7 +107,7 @@ merge     🔀 合并分支
     ├── .babelrc.js                     # babel配置
     ├── .env.json                       # 环境变量配置
     ├── .gitignore                      # git提交忽略文件
-    ├── .npmrc                          
+    ├── .npmrc
     ├── .prettierignore                 # prettierc忽略文件
     ├── .prettierrc                     # prettierc配置
     ├── .eslintrc.js                    # ESLint配置
@@ -118,5 +118,6 @@ merge     🔀 合并分支
 ```
 
 ## 技术栈说明
-- React18
-- TypeScript
+
+-   React18
+-   TypeScript

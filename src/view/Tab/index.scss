@@ -1,0 +1,14 @@
+.tab-root {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    backdrop-filter: saturate(180%) blur(20px);
+
+    .tab-wrap {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+}
