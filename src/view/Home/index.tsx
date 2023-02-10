@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate, Link, Outlet} from 'react-router-dom';
-import './index.scss';
+import './index.less';
 
 function Home() {
     const navigate = useNavigate();
@@ -14,7 +14,9 @@ function Home() {
             <div className='home-tab'>
                 <Link to='/home/one'>HomeOne</Link>
                 <Link to='/home/two'>HomeTwo</Link>
-                <button onClick={handleClickLink}>使用navigate方式跳转HomeOne</button>
+                <div className='btn' onClick={handleClickLink}>
+                    使用navigate方式跳转HomeOne navigate('/home/one')
+                </div>
             </div>
             <Outlet />
         </div>

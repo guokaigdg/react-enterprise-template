@@ -15,29 +15,34 @@ const About = Suspenselazy(() => import(/* webpackChunkName:"about" */ '@/view/A
 const routes: RouteObject[] = [
     {
         path: '/',
-        element: <Navigate to='/home/one' /> // 重定向
+        element: <Navigate to='home' /> // 重定向
     },
     {
-        path: '/home',
+        path: 'home',
         element: Home,
         children: [
             // 嵌套路由
             {
-                path: '/home/one',
+                path: 'one',
                 element: HomeOne
             },
             {
-                path: '/home/two',
+                path: 'two',
                 element: HomeTwo
             }
         ]
     },
     {
-        path: '/dashboard',
+        path: 'dashboard',
         element: Dashboard
     },
     {
-        path: '/about',
+        path: 'about',
+        element: About
+    },
+    // 未匹配到页面
+    {
+        path: '*',
         element: About
     }
 ];
