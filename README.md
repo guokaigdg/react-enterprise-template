@@ -15,7 +15,8 @@
 -   TypeScript v4
 -   webpack v5
 -   axios
--   mobx-react-lite
+-   mobx v6
+-   mobx-react-lite v3
 -   react-router-dom v6
 -   postcss-px-to-viewport
 

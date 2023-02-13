@@ -20,7 +20,6 @@
     "scripts": {
         "dev": "npm run start",
         "start": "env-cmd -r .env.json -e development node webpack/server",
-        "build": "npm run build:qa npm run build:prod",
         "build:qa": "env-cmd -r .env.json -e qa webpack --config ./webpack/config/webpack.prod.js",
         "build:prod": "env-cmd -r .env.json -e production webpack --config ./webpack/config/webpack.prod.js"
     },
@@ -106,6 +105,8 @@
         "webpackbar": "^5.0.2"
     },
     "dependencies": {
+        "mobx": "^6.8.0",
+        "mobx-react-lite": "^3.4.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.8.1"
