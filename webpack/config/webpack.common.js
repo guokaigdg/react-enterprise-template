@@ -1,18 +1,18 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // 简化 HTML 文件创建以服务捆绑包的插件, 将js文件自动引进 html 文件中
 // const PreloadWebpackPlugin = require('preload-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const WebpackBar = require('webpackbar');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 抽离css文件, 这个插件将CSS取到单独的文件中。它为每个包含CSS的JS文件创建一个CSS文件。它支持按需加载 CSS 和 SourceMaps。
+const WebpackBar = require('webpackbar'); // 优雅的 Webpack 进度条和分析器
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin'); // 启动本地服务/打包错误提示
+const CopyPlugin = require('copy-webpack-plugin'); // 将已存在的单个文件或整个目录复制到生成目录
 const webpack = require('webpack');
 const paths = require('../paths');
 const {isDevelopment, isProduction} = require('../env');
 const {imageInlineSizeLimit, imageBase64Path, shouldBase64FromFileEnd} = require('../conf');
 
 const cssLoaders = (importLoaders) => [
-    isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+    isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, // style-loader的作用就是将结果以style标签的方式插入DOM树中。
     {
-        loader: 'css-loader',
+        loader: 'css-loader', // 主要是解析css文件中的@import和url语句，处理css-modules，并将结果作为一个js模块返回
         options: {
             modules: false,
             sourceMap: isDevelopment, // 开发环境开启
@@ -20,14 +20,15 @@ const cssLoaders = (importLoaders) => [
         }
     },
     {
-        loader: 'postcss-loader',
+        loader: 'postcss-loader', // 进一步处理css文件，比如添加浏览器前缀，压缩 CSS 等
         options: {
             postcssOptions: {
                 plugins: [
-                    require('postcss-flexbugs-fixes'),
+                    require('postcss-flexbugs-fixes'), // 用于修复一些和 flex 布局相关的 bug
                     isProduction && [
-                        'postcss-preset-env',
+                        'postcss-preset-env', // 最新的 CSS 语法转换为目标环境的浏览器能够理解的 CSS 语法，目的是使开发者不用考虑浏览器兼容问题。
                         {
+                            // 使用 autoprefixer 来自动添加浏览器头
                             autoprefixer: {
                                 grid: true,
                                 flexbox: 'no-2009'

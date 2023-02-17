@@ -1,6 +1,6 @@
 const Webpack = require('webpack');
-const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
-const {merge} = require('webpack-merge');
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin'); // 这个插件将在你的应用程序中定位显示出错信息
+const {merge} = require('webpack-merge'); // Webpack合并函数
 const commonConfig = require('./webpack.common.js');
 const paths = require('../paths');
 
@@ -11,7 +11,7 @@ const devConfig = {
     output: {
         path: paths.appBuild,
         publicPath: '/',
-        filename: 'js/[name].js',
+        filename: 'js/[name].js'
     },
     devServer: {
         host: '0.0.0.0',
@@ -22,9 +22,9 @@ const devConfig = {
         hot: true, // 热更新
         noInfo: true,
         proxy: {
-            ...require(paths.appProxySetup),
+            ...require(paths.appProxySetup)
         },
-        historyApiFallback: true, // 单页面配置appProxySetup
+        historyApiFallback: true // 单页面配置appProxySetup
     },
     plugins: [new Webpack.HotModuleReplacementPlugin(), new ErrorOverlayPlugin()],
     optimization: {
@@ -32,9 +32,9 @@ const devConfig = {
         minimizer: [],
         splitChunks: {
             chunks: 'all',
-            minSize: 0,
-        },
-    },
+            minSize: 0
+        }
+    }
 };
 
 module.exports = merge(commonConfig, devConfig);

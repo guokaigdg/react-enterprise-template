@@ -1,14 +1,14 @@
 const Webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
-const chalk = require('chalk');
+const WebpackDevServer = require('webpack-dev-server'); // 本地起一个 http 服务，可配置指定其端口/热更新...
+const chalk = require('chalk'); // 终端字符串样式个性化自定义
 const webpackDevConfig = require('../config/webpack.dev');
-const detect = require('detect-port-alt');
+const detect = require('detect-port-alt'); // 端口检测
 const {SERVER_HOST, SERVER_PORT, divider} = require('../conf');
-const ip = require('ip');
+const ip = require('ip'); // 获取 IP 地址实用程序
 
 const compiler = Webpack(webpackDevConfig);
 const devServerOptions = {
-    ...webpackDevConfig.devServer,
+    ...webpackDevConfig.devServer
 };
 const server = new WebpackDevServer(compiler, devServerOptions);
 
@@ -44,13 +44,13 @@ const logger = {
     - Local: ${chalk.blue(`  http://${host}:${port}`)}
     - Network: ${chalk.blue(`http://${ip.address()}:${port}`)}
     ${chalk.gray(divider)}
-    
+
     Note that the development build is not optimized.
     To create a production build, run npm run build.
 
     ${chalk.magenta(`Press ${chalk.italic('Ctrl+c')} to stop`)}
         `);
-    },
+    }
 };
 
 // 开启本地服务入口
