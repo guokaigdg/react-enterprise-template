@@ -1,9 +1,9 @@
 <h1 align="center">react 模板</h1>
 <br/>
 
-<center>
+<div align="center">
     <img src='./docs/images/home.png' style='width: 75%'/>
-</center>
+</div>
 
 ## 👨🏻‍💻 项目说明
 
