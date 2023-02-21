@@ -1,11 +1,84 @@
 .home-two-root {
     display: flex;
     flex: 1;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     box-sizing: border-box;
-    height: 800px;
-    font-size: 50px;
+    height: 100%;
     background: #ffe7ba;
     border-radius: 10px;
+
+    .search-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 120px;
+
+        .input {
+            width: 250px;
+            height: 40px;
+            padding: 0 5px;
+            text-align: center;
+        }
+
+        .btn {
+            width: 60px;
+            margin-left: 20px;
+            padding: 10px;
+            color: azure;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            background: #3c6ffe;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #3765e6;
+                border-color: #3765e6;
+            }
+
+            &:active {
+                background-color: #315acc;
+                border-color: #315acc;
+            }
+        }
+    }
+
+    .list-root{
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+        overflow: scroll;
+
+        .pokemon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 300px;
+            height: 200px;
+            margin: 5px;
+            color: #383a3a;
+            font-size: 24px;
+            background-color: rgb(255 255 255);
+            border-radius: 10px;
+
+            &:hover{
+                border: #ea9f14 5px solid;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+
+            .img{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+            }
+        }
+
+    }
 }

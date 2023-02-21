@@ -1,6 +1,10 @@
 <h1 align="center">react 模板</h1>
 <br/>
 
+<center>
+    <img src='./docs/images/home.png' style='width: 75%'/>
+</center>
+
 ## 👨🏻‍💻 项目说明
 
 -   react 模板, 一个比 CRA 更丰富的模板
@@ -14,11 +18,10 @@
 -   React Hook
 -   TypeScript v4
 -   webpack v5
--   axios
+-   axios v1
 -   mobx v6
 -   mobx-react-lite v3
 -   react-router-dom v6
--   postcss-px-to-viewport
 
 ## ⌛️ 安装项目依赖
 
@@ -127,7 +130,10 @@ merge     🔀 合并分支
 
 ```
 
-## 技术栈说明
+## 🚀 陆续新增内容：
 
--   React18
--   TypeScript
+-   ① 样式 ✅ 2023/2/6 日提交 [config: 🔧  新增样式文件(css/less/sass/postCss)处理](https://github.com/guokaigdg/react-enterprise-template/commit/11fb415bac609dfa7474a1ee2db93ccb4a350a51)
+-   ② 代码规范 ✅ 2023/2/7 日提交 [config: 🔧  新增 Prettier/ESlint/StyleLint/EditorConfig 代码规范](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
+-   ③ 路由 ✅ 2023/2/8 日提交 [config: 🔧 新增路由管理 react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
+-   ④ 网络请求 ✅ 2023/2/21 日提交
+-   ⑤ 数据共享 ✅ [feature: ✨  新增状态管理 Mobx v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
