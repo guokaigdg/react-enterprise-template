@@ -5,13 +5,25 @@
     <img src='./docs/images/home.png' style='width: 75%'/>
 </div>
 
+<!-- 简体中文 | [English](https://github.com/xxx.md) -->
+
 ## 👨🏻‍💻 项目说明
 
 -   react 模板, 一个比 CRA 更丰富的模板
 
 -   开发配置文档说明 [React18 + webpack5 + TypeScript4 + react-router-dom](https://juejin.cn/post/7197790401495121977)
 
+## 📱 特点
+
+-   📦 开箱即用，无需配置
+-   📝 全面注释说明，学习低成本
+-   🚀 启动编译迅速
+-   ⭐️ 1.0 版本（2023/2/21 日）已经全部完成
+-   📬 有问题直接 issues 或者留言
+
 ## 🚀 技术栈
+
+[![react](https://img.shields.io/badge/react-18.2.0-brightgreen.svg)](https://github.com/facebook/react/) [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.4-brightgreen.svg)](https://github.com/microsoft/TypeScript)[![webpack](https://img.shields.io/badge/webpack-5.75.0-brightgreen.svg)](https://github.com/facebook/react/) [![axios](https://img.shields.io/badge/axios-0.18.0-brightgreen.svg)](https://github.com/axios/axios) [![mobx](https://img.shields.io/badge/mobx-6.8.0-brightgreen.svg)](https://github.com/mobx) [![react-router-dom](https://img.shields.io/badge/react--router--dom-6.8.1-brightgreen.svg)](https://github.com/remix-run/react-router) [![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)]()
 
 -   React v18
 -   react-dom v18
@@ -22,6 +34,14 @@
 -   mobx v6
 -   mobx-react-lite v3
 -   react-router-dom v6
+
+## 🎄 陆续新增内容：
+
+-   ① 样式 ✅ 2023/2/6 日提交 [config: 🔧  新增样式文件(css/less/sass/postCss)处理](https://github.com/guokaigdg/react-enterprise-template/commit/11fb415bac609dfa7474a1ee2db93ccb4a350a51)
+-   ② 代码规范 ✅ 2023/2/7 日提交 [config: 🔧  新增 Prettier/ESlint/StyleLint/EditorConfig 代码规范](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
+-   ③ 路由 ✅ 2023/2/8 日提交 [config: 🔧 新增路由管理 react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
+-   ④ 网络请求 ✅ 2023/2/21 日提交 [feat: ✨  新增网络请求 Axios v1](https://github.com/guokaigdg/react-enterprise-template/commit/27cd67f641d5ecf53b89770195f75bd32bccce46)
+-   ⑤ 数据共享 ✅ 2023/2/13 日提交 [feature: ✨  新增状态管理 Mobx v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
 
 ## ⌛️ 安装项目依赖
 
@@ -129,11 +149,3 @@ merge     🔀 合并分支
     └── yarn.lock                       # yarn安装包锁定管理
 
 ```
-
-## 🚀 陆续新增内容：
-
--   ① 样式 ✅ 2023/2/6 日提交 [config: 🔧  新增样式文件(css/less/sass/postCss)处理](https://github.com/guokaigdg/react-enterprise-template/commit/11fb415bac609dfa7474a1ee2db93ccb4a350a51)
--   ② 代码规范 ✅ 2023/2/7 日提交 [config: 🔧  新增 Prettier/ESlint/StyleLint/EditorConfig 代码规范](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
--   ③ 路由 ✅ 2023/2/8 日提交 [config: 🔧 新增路由管理 react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
--   ④ 网络请求 ✅ 2023/2/21 日提交
--   ⑤ 数据共享 ✅ [feature: ✨  新增状态管理 Mobx v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
