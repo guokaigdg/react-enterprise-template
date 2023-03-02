@@ -2,11 +2,11 @@
 <br/>
 
 <div align="center">
-    <img src='./docs/images/home.png' style='width: 75%'/>
+    <img src='./images/home.png' style='width: 75%'/>
 </div>
 <br>
 <p align="center">
-    简体中文 | <a href="./docs/README.en.md">English</a>
+    <a href="../README.md">简体中文</a> |  English
 </p>
 
 ## 👨🏻‍💻 项目说明

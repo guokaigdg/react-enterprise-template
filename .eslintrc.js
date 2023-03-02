@@ -13,7 +13,8 @@ module.exports = {
     extends: [
         'eslint:recommended', // 使用eslint中recommened的规则
         'plugin:react/recommended', // 推荐的react lint配置
-        'plugin:@typescript-eslint/recommended' // 需额外手动安装 @typescript-eslint/eslint-plugin
+        'plugin:@typescript-eslint/recommended', // 可开启针对 ts 语法推荐的规则定义, 需额外手动安装 @typescript-eslint/eslint-plugin
+        'plugin:react-hooks/recommended' // react hook当依赖项指定不正确时，会发出警告并建议修复。
     ],
     overrides: [],
     // ESLint 默认使用Espree作为其解析器，你可以在配置文件中指定一个不同的解析器
@@ -33,17 +34,20 @@ module.exports = {
     },
     // ESLint 支持使用第三方插件。在使用插件之前，你必须使用 npm 安装它。
     // 在配置文件里配置插件时，可以使用 plugins 关键字来存放插件名字的列表。插件名称可以省略 eslint-plugin- 前缀。
-    plugins: ['react', '@typescript-eslint'],
+    plugins: ['react', '@typescript-eslint', 'react-hooks'],
     // ESLint 附带有大量的规则。你可以使用注释或配置文件修改你项目中要使用的规则。要改变一个规则设置，你必须将规则 ID 设置为下列值之一：
     rules: {
         'import/extensions': [
-            ERROR,
+            OFF,
             'ignorePackages',
             {
                 ts: 'never',
                 tsx: 'never',
                 js: 'never'
             }
-        ]
+        ],
+        '@typescript-eslint/no-var-requires': OFF, // 忽略没有导入声明模块
+        'react-hooks/rules-of-hooks': ERROR, // 检查 Hook 的规则
+        'react-hooks/exhaustive-deps': WARN // 检查 Effect 的依赖
     }
 };

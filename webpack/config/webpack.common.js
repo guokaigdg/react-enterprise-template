@@ -10,13 +10,14 @@ const {isDevelopment, isProduction} = require('../env');
 const {imageInlineSizeLimit, imageBase64Path, shouldBase64FromFileEnd} = require('../conf');
 
 const cssLoaders = (importLoaders) => [
-    isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, // style-loader的作用就是将结果以style标签的方式插入DOM树中。
+    // 执行顺序从后到前 less-loader -> postcss-loader -> css-loader -> style-loader/MiniCssExtractPlugin.loader
+    isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, // style-loader的作用就是将结果以style标签的方式插入DOM树中。style-loader将css-loader打包好的 CSS 代码以<style>标签的形式插入到 HTML 文件中
     {
         loader: 'css-loader', // 主要是解析css文件中的@import和url语句，处理css-modules，并将结果作为一个js模块返回
         options: {
             modules: false,
             sourceMap: isDevelopment, // 开发环境开启
-            importLoaders
+            importLoaders // 执行顺序: 需要先被 less-loader postcss-loader (所以这里设置为 2)
         }
     },
     {
@@ -82,18 +83,6 @@ const config = {
                     ...cssLoaders(2),
                     {
                         loader: 'less-loader',
-                        options: {
-                            sourceMap: isDevelopment
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    ...cssLoaders(2),
-                    {
-                        loader: 'sass-loader',
                         options: {
                             sourceMap: isDevelopment
                         }

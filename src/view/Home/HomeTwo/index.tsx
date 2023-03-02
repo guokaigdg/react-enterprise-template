@@ -17,6 +17,7 @@ const HomeTwo = () => {
         getFetchGetTest({
             limit: 500
         });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
