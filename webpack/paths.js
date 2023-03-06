@@ -55,5 +55,6 @@ module.exports = {
     appProxySetup: resolveModule(resolveApp, 'webpack/setProxy'),
     appPackageJson: resolveApp('package.json'),
     appTsConfig: resolveApp('tsconfig.json'),
-    moduleFileExtensions,
+    appSvg: resolveApp('src/assets/icons'),
+    moduleFileExtensions
 };

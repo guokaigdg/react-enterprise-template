@@ -113,8 +113,17 @@ const config = {
                 }
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2?)$/,
+                test: /\.(eot|ttf|woff|woff2?)$/,
+                exclude: paths.appSvg, // 不处理 svg类型文件
                 type: 'asset/resource'
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-sprite-loader',
+                include: paths.appSvg,
+                options: {
+                    symbolId: 'icon-[name]' // symbolId和use使用的名称对应 <use xlinkHref={"#icon-" + svgName} />
+                }
             }
         ]
     },

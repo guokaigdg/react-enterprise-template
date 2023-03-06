@@ -1,6 +1,7 @@
 import React from 'react';
 import {observer} from 'mobx-react-lite';
 import {useStores} from '@/store';
+import SvgIcon from '@/components/SvgIcon';
 import './index.less';
 
 const HomeOne = () => {
@@ -10,6 +11,9 @@ const HomeOne = () => {
 
     return (
         <div className='home-one-root'>
+            <SvgIcon svgName='my' color='pink' svgClass='icon-my' />
+            <SvgIcon svgName='loop' color='#1db02e' />
+            <SvgIcon svgName='loading' color='#1db02e' />
             HomeOne
             <p>{name}</p>
             <p> globalStore: {count}</p>
