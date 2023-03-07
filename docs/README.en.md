@@ -1,4 +1,4 @@
-<h1 align="center">react 模板</h1>
+<h1 align="center">React template</h1>
 <br/>
 
 <div align="center">
@@ -9,20 +9,20 @@
     <a href="../README.md">简体中文</a> |  English
 </p>
 
-## 👨🏻‍💻 项目说明
+## 👨🏻‍💻 Project Description
 
--   react 模板, 一个比 CRA 更丰富的模板
+-   React template, a more rich template than CRA.
 
--   开发配置文档说明 [React18 + webpack5 + TypeScript4 + react-router-dom](https://juejin.cn/post/7197790401495121977)
+-   Development configuration documentation [React18 + webpack5 + TypeScript4 + react-router-dom](https://juejin.cn/post/7197790401495121977)
 
-## 📱 特点
+## 📱 Features
 
--   📦 开箱即用，无需配置
--   📝 全面注释说明，学习低成本
--   🚀 启动编译迅速
--   🌱 极易定制, 拓展容易
+-   📦 Out of the box, no configuration required.
+-   📝 Comprehensive comment explanations, low learning cost.
+-   🚀 Fast startup and compilation.
+-   🌱 Highly customizable, easy to expand.
 
-## 🚀 技术栈
+## 🚀 Technology Stack
 
 [![react](https://img.shields.io/badge/react-18.2.0-brightgreen.svg)](https://github.com/facebook/react/) [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.4-brightgreen.svg)](https://github.com/microsoft/TypeScript)[![webpack](https://img.shields.io/badge/webpack-5.75.0-brightgreen.svg)](https://github.com/facebook/react/) [![axios](https://img.shields.io/badge/axios-0.18.0-brightgreen.svg)](https://github.com/axios/axios) [![mobx](https://img.shields.io/badge/mobx-6.8.0-brightgreen.svg)](https://github.com/mobx) [![react-router-dom](https://img.shields.io/badge/react--router--dom-6.8.1-brightgreen.svg)](https://github.com/remix-run/react-router) [![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)]()
 
@@ -36,15 +36,15 @@
 -   mobx-react-lite v3
 -   react-router-dom v6
 
-## 🎄 陆续新增内容：
+## 🎄 Upcoming Features:
 
--   ① 样式 ✅ 2023/2/6 日提交 [config: 🔧  新增样式文件(css/less/sass/postCss)处理](https://github.com/guokaigdg/react-enterprise-template/commit/11fb415bac609dfa7474a1ee2db93ccb4a350a51)
--   ② 代码规范 ✅ 2023/2/7 日提交 [config: 🔧  新增 Prettier/ESlint/StyleLint/EditorConfig 代码规范](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
--   ③ 路由 ✅ 2023/2/8 日提交 [config: 🔧 新增路由管理 react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
--   ④ 网络请求 ✅ 2023/2/21 日提交 [feat: ✨  新增网络请求 Axios v1](https://github.com/guokaigdg/react-enterprise-template/commit/27cd67f641d5ecf53b89770195f75bd32bccce46)
--   ⑤ 数据共享 ✅ 2023/2/13 日提交 [feature: ✨  新增状态管理 Mobx v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
+-   ① Styles ✅ Submitted on 2023/2/6 [config: 🔧 Add style file (css/less/sass/postCss) processing](https://github.com/guokaigdg/react-enterprise-template/commit/11fb415bac609dfa7474a1ee2db93ccb4a350a51)
+-   ② Code specification ✅ Submitted on 2023/2/7 [config: 🔧  Add Prettier/ESlint/StyleLint/EditorConfig code specification](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
+-   ③ Routing ✅ Submitted on 2023/2/8 [config: 🔧 Add routing management react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
+-   ④ Network request ✅ Submitted on 2023/2/21 [feat: ✨  Add network request Axios v1](https://github.com/guokaigdg/react-enterprise-template/commit/27cd67f641d5ecf53b89770195f75bd32bccce46)
+-   ⑤ Data sharing ✅ Submitted on 2023/2/13 [feature: ✨  Add state management MobX v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
 
-## ⌛️ 安装项目依赖
+## ⌛️ Install project dependencies
 
 ```
 npm
@@ -54,7 +54,7 @@ yarn
 $ yarn
 ```
 
-## 🚀 运行项目
+## 🚀 Run the project
 
 ```
 npm
@@ -64,98 +64,99 @@ yarn
 $ yarn dev
 ```
 
-## 📦 打包编译
+## 📦 Packaging and compilation
 
 ```
-npm run build:qa  // 测试环境
-npm run build:prod  // 线上环境
+npm run build:qa  // Testing environment
+npm run build:prod  // Production environment
 ```
 
-## 💡 分支说明
+## 💡 Branch description
 
-| 分支 | 说明     |
-| ---- | -------- |
-| main | 主分支   |
-| dev  | 开发分支 |
+| Branch | description        |
+| ------ | ------------------ |
+| main   | Main branch        |
+| dev    | Development branch |
 
-## 代码提交规范
+## Code submission specification
 
 ```
 git <type>: <subject>
-git commit -m “feat: 项目初始化”
+git commit -m "feat: Project initialization"
 ```
 
 ### type 参考:
 
 ```
-fix       🐛 Bug修复
-feature   ✨ 引入新特性
-docs      📝 文档书写改动
-prune     🔥 移除代码或文件
-ui        💄 更新UI和样式文件
-perf      ⚡ 性能相关优化
-rocket    🚀 部署功能
-style     🎨 style修改
-init      🎉 初始化提交
-release   🔖 发布版本
-wip       🚧 正在进行中, 且有可能出现不稳定运行的提交
-config    🔧 修改配置文件
-refactot  🔨 重构(既不增加新功能, 也不修改bug的代码改动)
-merge     🔀 合并分支
+fix       🐛 Bug fix
+feature   ✨ Introduce new features
+docs      📝 Document writing changes
+prune     🔥 Remove code or files
+ui        💄 Update UI and style files
+perf      ⚡ Performance-related optimizations
+rocket    🚀 Deployment function
+style     🎨 Style modification
+init      🎉 Initial submission
+release   🔖 Release version
+wip       🚧 Work in progress, and unstable submissions may occur
+config    🔧 Modify configuration file
+refactot  🔨 Refactoring (code changes that neither add new features nor fix bugs)
+merge     🔀 Merge branches
 ```
 
-## 📂 目录结构
+## 📂 Directory Structure
 
 ```
     ├── .vscode
-    │   └──setting.json                 # 先于vscode全局的settings.json配置
-    ├── doc                             # 开发文档记录
-    ├── webpack                         # 打包编译
-    │   └──config                       # webpack配置
-    │       ├── webpack.common.js       # 基础配置
-    │       ├── webpack.dev.js          # 开发环境配置
-    │       └──webpack.prod.js          # 生产环境配置
+    │   └──setting.json                 # Configuration for vscode that takes precedence over global settings.json
+    ├── doc                             # Development documentation
+    ├── webpack                         # Packaging and compilation
+    │   └──config                       # Webpack configuration
+    │       ├── webpack.common.js       # Base configuration
+    │       ├── webpack.dev.js          # Development environment configuration
+    │       └──webpack.prod.js          # Production environment configuration
     ├── pubilc
-    │   ├──favicon.ico                  # HTML图标
-    │   └──index.html                   # HTML入口模板
+    │   ├──favicon.ico                  # HTML icon
+    │   └──index.html                   # HTML entry template
     ├── src
-    |   ├── api                         # 接口配置
-    |   ├── assets                      # 静态资源
-    │   ├── components                  # 项目通用通用组件
-    │   ├── http                        # 请求统一封装
-    │   ├── httpinterface               # ts类型定义
-    │   ├── constData                   # 系统内的常量列表
-    │   ├── router                      # 统一路由入口
-    │   ├── store                       # 数据共享
-    │   ├── styles                      # 全局样式
-    │   ├── utils                       # 工具库
-    │   ├── view                        # 页面
-    │   ├── App.tsx                     # 主界面
-    │   └──index.tsx                    # 入口文件
-    ├── .babelrc.js                     # babel配置
-    ├── .editorconfig                   # 跨编辑器维护一致编码风格
-    ├── .env.json                       # 环境变量配置
-    ├── .eslintignore                   # ESLint忽略检测文件
-    ├── .eslintrc.js                    # ESLint配置
-    ├── .gitignore                      # git提交忽略文件
+    |   ├── api                         # Interface configuration
+    |   ├── assets                      # Static resources
+    │   ├── components                  # Common components of the project
+    │   ├── http                        # Unified encapsulation of requests
+    │   ├── httpinterface               # TypeScript type definition
+    │   ├── constData                   # Constant list within the system
+    │   ├── router                      # Unified routing entry
+    │   ├── store                       # Data sharing
+    │   ├── styles                      # Global style
+    │   ├── utils                       # Utility library
+    │   ├── view                        # Pages
+    │   ├── App.tsx                     # Main interface
+    │   └──index.tsx                    # Entry file
+    ├── .babelrc.js                     # Babel configuration
+    ├── .editorconfig                   # Maintaining consistent coding style across editors
+    ├── .env.json                       # Environment variable configuration
+    ├── .eslintignore                   # Files ignored by ESLint
+    ├── .eslintrc.js                    # ESLint configuration
+    ├── .gitignore                      # Files ignored by git submission
     ├── .npmrc
-    ├── .prettierignore                 # prettierc忽略文件
-    ├── .prettierrc                     # prettierc配置
-    ├── .stylelintrc.js                 # 代码风格配置
-    ├── LICENSE                         # 开源协议
-    ├── package-lock.json               # npm安装包锁定管理
-    ├── package.json                    # 依赖包管理
-    ├── README.md                       # 项目说明
-    ├── tsconfig.json                   # ts配置文件
-    └── yarn.lock                       # yarn安装包锁定管理
+    ├── .prettierignore                 # Files ignored by prettierc
+    ├── .prettierrc                     # Prettierc configuration
+    ├── .stylelintrc.js                 # Code style configuration
+    ├── LICENSE                         # Open source license
+    ├── package-lock.json               # npm package lock management
+    ├── package.json                    # Dependency management
+    ├── README.md                       # Project description
+    ├── tsconfig.json                   # TypeScript configuration file
+    └── yarn.lock                       # Yarn package lock management
+
 
 ```
 
-## 🤝 如何贡献
+## 🤝 How to Contribute
 
--   📬 有问题直接 issues 或者留言
--   欢迎所有的贡献者，在成为贡献者之前，请先阅读贡献指南。如果您已经了解，快来 Issus 或 Pull requests 成为贡献者吧，让我们和小蝴蝶一起成长，一起变得更好、更棒！
+-   📬 If you have any questions, please open an issue or leave a message
+-   All contributors are welcome. Before becoming a contributor, please read the contribution guidelines. If you have already done so, make Pull requests and become a contributor.
 
-## 开源协议
+## Open Source License
 
-该项目的代码和文档基于  MIT License  开源协议。
+The code and documentation of this project are released under the MIT License open source license.
