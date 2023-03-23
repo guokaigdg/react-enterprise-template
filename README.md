@@ -42,7 +42,9 @@
 -   ② 代码规范 ✅ 2023/2/7 日提交 [config: 🔧  新增 Prettier/ESlint/StyleLint/EditorConfig 代码规范](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
 -   ③ 路由 ✅ 2023/2/8 日提交 [config: 🔧 新增路由管理 react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
 -   ④ 网络请求 ✅ 2023/2/21 日提交 [feat: ✨  新增网络请求 Axios v1](https://github.com/guokaigdg/react-enterprise-template/commit/27cd67f641d5ecf53b89770195f75bd32bccce46)
--   ⑤ 数据共享 ✅ 2023/2/13 日提交 [feature: ✨  新增状态管理 Mobx v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
+-   ⑤ 数据共享 ✅ 2023/2/13 日提交 [feat: ✨  新增状态管理 Mobx v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
+-   ⑥ React Hook 规则 ✅ 2023/3/2 日提交 [feat: ✨ 新增 react hooks 规则检查](https://github.com/guokaigdg/react-enterprise-template/commit/15346c07a9ffd74f69dd1bb0dd6a4a42aa72df57)
+-   ⑦ 封装全局 SVG 组件 ✅ 2023/3/6 日提交 [feat: ✨ 封装全局 SVG 组件](https://github.com/guokaigdg/react-enterprise-template/commit/066fc6ff28c1ac3b0d6422ebda8d59cdf9275d3a)
 
 ## ⌛️ 安装项目依赖
 
@@ -71,7 +73,7 @@ npm run build:qa  // 测试环境
 npm run build:prod  // 线上环境
 ```
 
-## 💡 分支说明
+## 🏷 分支说明
 
 | 分支 | 说明     |
 | ---- | -------- |
@@ -154,8 +156,8 @@ merge     🔀 合并分支
 ## 🤝 如何贡献
 
 -   📬 有问题直接 issues 或者留言
--   欢迎所有的贡献者，在成为贡献者之前，请先阅读贡献指南。如果您已经了解，快来 Issus 或 Pull requests 成为贡献者吧，让我们和小蝴蝶一起成长，一起变得更好、更棒！
+-   🧙‍♀️ 欢迎所有的贡献者，快来 Issus 或 Pull requests 成为贡献者吧
 
-## 开源协议
+## 💡 开源协议
 
 该项目的代码和文档基于  MIT License  开源协议。

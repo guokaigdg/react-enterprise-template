@@ -43,6 +43,8 @@
 -   ③ Routing ✅ Submitted on 2023/2/8 [config: 🔧 Add routing management react-router-dom v6](https://github.com/guokaigdg/react-enterprise-template/commit/239446d0709eb52bad2b48af4983eef91c49f60d)
 -   ④ Network request ✅ Submitted on 2023/2/21 [feat: ✨  Add network request Axios v1](https://github.com/guokaigdg/react-enterprise-template/commit/27cd67f641d5ecf53b89770195f75bd32bccce46)
 -   ⑤ Data sharing ✅ Submitted on 2023/2/13 [feature: ✨  Add state management MobX v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
+-   ⑥ React Hook Rules ✅ Submitted 2023/3/2 [feat: ✨ Added check for React Hook rules](https://github.com/guokaigdg/react-enterprise-template/commit/15346c07a9ffd74f69dd1bb0dd6a4a42aa72df57)
+-   ⑦ Encapsulated global SVG componen ✅ Submitted 2023/3/6 [feat: ✨ Encapsulated global SVG component](https://github.com/guokaigdg/react-enterprise-template/commit/066fc6ff28c1ac3b0d6422ebda8d59cdf9275d3a)
 
 ## ⌛️ Install project dependencies
 
@@ -71,7 +73,7 @@ npm run build:qa  // Testing environment
 npm run build:prod  // Production environment
 ```
 
-## 💡 Branch description
+## 🏷 Branch description
 
 | Branch | description        |
 | ------ | ------------------ |
@@ -155,8 +157,8 @@ merge     🔀 Merge branches
 ## 🤝 How to Contribute
 
 -   📬 If you have any questions, please open an issue or leave a message
--   All contributors are welcome. Before becoming a contributor, please read the contribution guidelines. If you have already done so, make Pull requests and become a contributor.
+-   🧙‍♀️ Welcome all contributors, come to Issus or submit Pull Requests to become a contributor
 
-## Open Source License
+## 💡 Open Source License
 
 The code and documentation of this project are released under the MIT License open source license.
