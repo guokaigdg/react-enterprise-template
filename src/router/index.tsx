@@ -3,14 +3,14 @@
  * https://reactrouter.com/en/v6.3.0/getting-started/installation
  */
 import React from 'react';
-import Suspenselazy from '@/components/Suspenselazy';
+import SuspenseLazy from '@/components/SuspenseLazy';
 import {Navigate, RouteObject} from 'react-router-dom';
 
-const Home = Suspenselazy(() => import(/* webpackChunkName:"" */ '@/view/Home'));
-const HomeOne = Suspenselazy(() => import(/* webpackChunkName:"homeOne" */ '@/view/Home/HomeOne'));
-const HomeTwo = Suspenselazy(() => import(/* webpackChunkName:"homeTwo" */ '@/view/Home/HomeTwo'));
-const Dashboard = Suspenselazy(() => import(/* webpackChunkName:"dashboard" */ '@/view/Dashboard'));
-const About = Suspenselazy(() => import(/* webpackChunkName:"about" */ '@/view/About'));
+const Home = SuspenseLazy(() => import(/* webpackChunkName:"" */ '@/view/Home'));
+const HomeOne = SuspenseLazy(() => import(/* webpackChunkName:"homeOne" */ '@/view/Home/HomeOne'));
+const HomeTwo = SuspenseLazy(() => import(/* webpackChunkName:"homeTwo" */ '@/view/Home/HomeTwo'));
+const Dashboard = SuspenseLazy(() => import(/* webpackChunkName:"dashboard" */ '@/view/Dashboard'));
+const About = SuspenseLazy(() => import(/* webpackChunkName:"about" */ '@/view/About'));
 
 const routes: RouteObject[] = [
     {
