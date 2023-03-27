@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 简化 HTML 文件创建以服务捆绑包的插件, 将js文件自动引进 html 文件中
-// const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 抽离css文件, 这个插件将CSS取到单独的文件中。它为每个包含CSS的JS文件创建一个CSS文件。它支持按需加载 CSS 和 SourceMaps。
 const WebpackBar = require('webpackbar'); // 优雅的 Webpack 进度条和分析器
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin'); // 启动本地服务/打包错误提示
@@ -158,10 +157,6 @@ const config = {
                 configFile: paths.appTsConfig
             }
         })
-        // new PreloadWebpackPlugin({
-        //     rel: 'prefetch', // 预加载
-        //     include: ['book'],
-        // }),
     ]
 };
 

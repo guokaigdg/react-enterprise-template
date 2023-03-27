@@ -10,7 +10,6 @@ const {shouldOpenAnalyzer, ANALYZER_HOST, ANALYZER_PORT} = require('../conf');
 
 const prodConfig = {
     mode: 'production',
-    // devtool: 'hidden-source-map',
     target: 'browserslist',
     output: {
         path: paths.appBuild,
@@ -20,7 +19,6 @@ const prodConfig = {
         clean: true // 在生成文件之前清空 output 目录
     },
     plugins: [
-        // new CleanWebpackPlugin(), // 使用clean: true 代替
         new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].chunk.css',

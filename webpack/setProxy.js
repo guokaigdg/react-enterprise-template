@@ -1,4 +1,3 @@
-// eslint-disable-next-line unicorn/no-abusive-eslint-disable
 const Cookie = '';
 const proxySettings = {
     '/api': {
@@ -8,16 +7,16 @@ const proxySettings = {
         // target: 'http://dev.xxx.xxx.com',  // 线上(prod)环境地址
         changeOrigin: true,
         headers: {
-            Cookie,
-        },
+            Cookie
+        }
     },
     '/msg': {
         target: 'http://xxx.dev.xxx.com:8133',
         changeOrigin: true,
         headers: {
-            Cookie,
-        },
-    },
+            Cookie
+        }
+    }
 };
 
 module.exports = proxySettings;
