@@ -28,7 +28,6 @@
 
 -   React v18
 -   react-dom v18
--   React Hook
 -   TypeScript v4
 -   webpack v5
 -   axios v1
@@ -153,6 +152,10 @@ merge     🔀 合并分支
     └── yarn.lock                       # yarn安装包锁定管理
 
 ```
+
+## 📚 开发资料参考
+
+-   <a href="./docs/README.en.md">开发资料参考</a>
 
 ## 🤝 如何贡献
 

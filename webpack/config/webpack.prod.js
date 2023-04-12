@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 抽离css文件, 这个插件将CSS取到单独的文件中。它为每个包含CSS的JS文件创建一个CSS文件。它支持按需加载 CSS 和 SourceMaps。
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin'); // 这个插件优化和压缩css
-const TerserPlugin = require('terser-webpack-plugin'); // 这个插件使用 terser 来缩小/最小化你的 JavaScript
+const TerserPlugin = require('terser-webpack-plugin'); // 这个插件使用 terser 压缩 JavaScript
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer'); // 使用交互式可缩放树形地图可视化 webpack 输出文件的大小
 const CompressionPlugin = require('compression-webpack-plugin'); // 静态资源压缩, 使用Content-Encoding为它们提供服务
 const {merge} = require('webpack-merge');
