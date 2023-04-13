@@ -10,3 +10,5 @@ export const stores = {globalStore, aboutStore};
 export const storesContext = React.createContext(stores);
 
 export const useStores = () => React.useContext(storesContext);
+
+export const StoresProvider = storesContext.Provider;
