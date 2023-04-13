@@ -9,6 +9,7 @@ import {Navigate, RouteObject} from 'react-router-dom';
 const Home = SuspenseLazy(() => import(/* webpackChunkName:"" */ '@/view/Home'));
 const HomeOne = SuspenseLazy(() => import(/* webpackChunkName:"homeOne" */ '@/view/Home/HomeOne'));
 const HomeTwo = SuspenseLazy(() => import(/* webpackChunkName:"homeTwo" */ '@/view/Home/HomeTwo'));
+const HomeThree = SuspenseLazy(() => import(/* webpackChunkName:"HomeThree" */ '@/view/Home/HomeThree'));
 const Dashboard = SuspenseLazy(() => import(/* webpackChunkName:"dashboard" */ '@/view/Dashboard'));
 const About = SuspenseLazy(() => import(/* webpackChunkName:"about" */ '@/view/About'));
 
@@ -29,6 +30,10 @@ const routes: RouteObject[] = [
             {
                 path: 'two',
                 element: HomeTwo
+            },
+            {
+                path: 'three',
+                element: HomeThree
             }
         ]
     },
