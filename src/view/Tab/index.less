@@ -2,13 +2,27 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 80px;
     backdrop-filter: saturate(180%) blur(20px);
 
     .tab-wrap {
         display: flex;
+        align-items: center;
         justify-content: space-around;
-        margin-top: 10px;
-        font-size: 30px;
+        height: 100%;
+        font-size: 26px;
+
+        a{
+            padding: 5px 15px;
+            color: #e4dbdb;
+            font-weight: 700;
+            text-decoration:none;
+
+            &:hover {
+                padding: 5px 15px;
+                background-color: #323232;
+                border-radius: 10px;
+            }
+        }
     }
 }

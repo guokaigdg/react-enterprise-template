@@ -4,7 +4,7 @@
     flex-direction: column;
     box-sizing: border-box;
     height: 100%;
-    background: #ffe7ba;
+    background: rgb(49 51 56);
     border-radius: 10px;
 
     .search-wrap{
@@ -19,29 +19,11 @@
             height: 40px;
             padding: 0 5px;
             text-align: center;
+            border-radius: 6px;
         }
 
-        .btn {
-            width: 60px;
+        .search-btn{
             margin-left: 20px;
-            padding: 10px;
-            color: azure;
-            font-weight: 700;
-            font-size: 14px;
-            text-align: center;
-            background: #3c6ffe;
-            border-radius: 5px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #3765e6;
-                border-color: #3765e6;
-            }
-
-            &:active {
-                background-color: #315acc;
-                border-color: #315acc;
-            }
         }
     }
 
@@ -61,16 +43,17 @@
             box-sizing: border-box;
             width: 300px;
             height: 200px;
-            margin: 5px;
+            margin: 8px;
             color: #383a3a;
             font-size: 24px;
             background-color: rgb(255 255 255);
             border-radius: 10px;
 
             &:hover{
-                border: #ea9f14 5px solid;
-                transform: scale(1.1);
+                transform: scale(1.06);
                 cursor: pointer;
+                opacity: 0.9;
+                transition: .2s;
             }
 
             .img{

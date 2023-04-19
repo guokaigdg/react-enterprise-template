@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {useStores} from '@/store';
+import {Button} from '@/components';
 import {observer} from 'mobx-react-lite';
 import './index.less';
 
@@ -24,9 +25,9 @@ const HomeTwo = () => {
         <div className='home-two-root'>
             <div className='search-wrap'>
                 <input className='input' type='search' placeholder='输入宝可梦名称'></input>
-                <div className='btn' onClick={handleClick}>
+                <Button className='search-btn' onClick={handleClick}>
                     查询
-                </div>
+                </Button>
             </div>
 
             {!loading && (

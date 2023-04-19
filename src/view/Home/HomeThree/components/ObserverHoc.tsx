@@ -43,10 +43,10 @@ const ObserverComponents = () => {
             <h3>点击获取数据, 打开控制台, 点击某一项查看console.log(渲染情况)</h3>
             <Button onClick={() => store.onFetchPokemon()}>获取数据observer</Button>
             <div>
-                {store.list?.map((item: {name: string; url: string}, index: number) => {
+                {store.list?.map((item: {name: string; url: string}) => {
                     console.log('render', item.name);
                     return (
-                        <p key={item.name + index} onClick={() => store.onChange(item)}>
+                        <p key={item.url} onClick={() => store.onChange(item)}>
                             {item.name}
                         </p>
                     );
