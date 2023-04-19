@@ -154,6 +154,10 @@ merge     🔀 Merge branches
 
 ```
 
+## 📚 Development reference
+
+-   <a href="./data.md">Development reference</a>
+
 ## 🤝 How to Contribute
 
 -   📬 If you have any questions, please open an issue or leave a message

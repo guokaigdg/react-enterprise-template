@@ -155,7 +155,7 @@ merge     🔀 合并分支
 
 ## 📚 开发资料参考
 
--   <a href="./docs/README.en.md">开发资料参考</a>
+-   <a href="./docs/data.md">开发资料参考</a>
 
 ## 🤝 如何贡献
 
