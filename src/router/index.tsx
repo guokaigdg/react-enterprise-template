@@ -10,8 +10,12 @@ const Home = SuspenseLazy(() => import(/* webpackChunkName:"" */ '@/view/Home'))
 const HomeOne = SuspenseLazy(() => import(/* webpackChunkName:"homeOne" */ '@/view/Home/HomeOne'));
 const HomeTwo = SuspenseLazy(() => import(/* webpackChunkName:"homeTwo" */ '@/view/Home/HomeTwo'));
 const HomeThree = SuspenseLazy(() => import(/* webpackChunkName:"HomeThree" */ '@/view/Home/HomeThree'));
+const HomeFour = SuspenseLazy(() => import(/* webpackChunkName:"HomeFour" */ '@/view/Home/HomeFour'));
+const HomeMobx = SuspenseLazy(() => import(/* webpackChunkName:"HomeMobx" */ '@/view/Home/HomeMobx'));
+const HomeIcon = SuspenseLazy(() => import(/* webpackChunkName:"HomeIcon" */ '@/view/Home/HomeIcon'));
 const Dashboard = SuspenseLazy(() => import(/* webpackChunkName:"dashboard" */ '@/view/Dashboard'));
 const About = SuspenseLazy(() => import(/* webpackChunkName:"about" */ '@/view/About'));
+const NotFound = SuspenseLazy(() => import(/* webpackChunkName:"about" */ '@/view/NotFound'));
 
 const routes: RouteObject[] = [
     {
@@ -34,6 +38,18 @@ const routes: RouteObject[] = [
             {
                 path: 'three',
                 element: HomeThree
+            },
+            {
+                path: 'four',
+                element: HomeFour
+            },
+            {
+                path: 'mobx',
+                element: HomeMobx
+            },
+            {
+                path: 'icon',
+                element: HomeIcon
             }
         ]
     },
@@ -48,7 +64,7 @@ const routes: RouteObject[] = [
     // 未匹配到页面
     {
         path: '*',
-        element: About
+        element: NotFound
     }
 ];
 

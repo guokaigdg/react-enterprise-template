@@ -1,39 +1,25 @@
 .home-root {
     display: flex;
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    padding-top: 70px;
+    padding-top: 80px;
 
     .home-tab {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         width: 300px;
-        height: 100%;
-        padding: 10px;
-        font-size: 25px;
-        background: #00bfff;
-        border-radius: 10px;
+        padding: 15px;
 
-        .btn {
-            margin-top: 20px;
-            padding: 10px;
-            color: azure;
-            font-weight: 700;
-            font-size: 14px;
-            background: #3c6ffe;
-            border-radius: 5px;
-            cursor: pointer;
+        .btn-wrap{
+            margin-bottom: 5px;
 
-            &:hover {
-                background-color: #3765e6;
-                border-color: #3765e6;
-            }
-
-            &:active {
-                background-color: #315acc;
-                border-color: #315acc;
+            .text-btn{
+                justify-content: flex-start;
+                width: 100%;
             }
         }
+
     }
 }

@@ -7,8 +7,12 @@ import './index.less';
 const HomeThree = () => {
     return (
         <div className='home-three-root'>
-            <ObserverHoc />
-            <ObserverComponents />
+            <div className='home-three-base'>
+                <ObserverHoc />
+            </div>
+            <div className='home-three-base'>
+                <ObserverComponents />
+            </div>
         </div>
     );
 };
