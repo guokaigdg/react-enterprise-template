@@ -15,7 +15,8 @@ const prodConfig = {
         path: paths.appBuild,
         filename: 'js/[name].[contenthash:8].js',
         assetModuleFilename: 'images/[name].[contenthash:8].[ext]',
-        publicPath: process.env.PUBLIC_PATH,
+        // publicPath: process.env.PUBLIC_PATH,
+        publicPath: '/react-enterprise-template/',
         clean: true // 在生成文件之前清空 output 目录
     },
     plugins: [

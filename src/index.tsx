@@ -7,7 +7,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement);
 root.render(
-    <BrowserRouter>
+    <BrowserRouter basename='react-enterprise-template'>
         <StoresProvider value={stores}>
             <App />
         </StoresProvider>
