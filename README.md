@@ -177,6 +177,10 @@ merge     🔀 合并分支
 -   📬 有问题直接 issues 或者留言
 -   🧙‍♀️ 欢迎所有的贡献者，快来 Issus 或 Pull requests 成为贡献者吧
 
+## ⭐️ Stargazers
+
+[![Stargazers repo roster for @guokaigdg/react-enterprise-template](https://reporoster.com/stars/guokaigdg/react-enterprise-template)](https://github.com/guokaigdg/react-enterprise-template/stargazers)
+
 ## 💡 开源协议
 
 该项目的代码和文档基于  MIT License  开源协议。
