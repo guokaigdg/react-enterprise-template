@@ -177,6 +177,10 @@ merge     🔀 Merge branches
 -   📬 If you have any questions, please open an issue or leave a message
 -   🧙‍♀️ Welcome all contributors, come to Issus or submit Pull Requests to become a contributor
 
+## ⭐️ Stargazers
+
+[![Stargazers repo roster for @guokaigdg/react-enterprise-template](https://reporoster.com/stars/guokaigdg/react-enterprise-template)](https://github.com/guokaigdg/react-enterprise-template/stargazers)
+
 ## 💡 Open Source License
 
 The code and documentation of this project are released under the MIT License open source license.
