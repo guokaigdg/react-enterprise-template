@@ -51,6 +51,13 @@
 -   ⑤ Data sharing ✅ Submitted on 2023/2/13 [feature: ✨  Add state management MobX v6](https://github.com/guokaigdg/react-enterprise-template/commit/992e1884943d4f8bda836f48c60df473418397d7)
 -   ⑥ React Hook Rules ✅ Submitted 2023/3/2 [feat: ✨ Added check for React Hook rules](https://github.com/guokaigdg/react-enterprise-template/commit/15346c07a9ffd74f69dd1bb0dd6a4a42aa72df57)
 -   ⑦ Encapsulated global SVG componen ✅ Submitted 2023/3/6 [feat: ✨ Encapsulated global SVG component](https://github.com/guokaigdg/react-enterprise-template/commit/066fc6ff28c1ac3b0d6422ebda8d59cdf9275d3a)
+-   ⑧ Mobile adaptation ✅ [feat: ✨ Add mobile adaptation solution: postcss px to viewport](https://github.com/guokaigdg/react-enterprise-template/commit/78b10e2d0bada75f4043eaa43aecffb2973fd357)
+
+-   ⑨ Explanation of the differences in the use of Mobx ✅ [feat: ✨ Add explanations and usage examples for makeObservable and makeAutoObservable](https://github.com/guokaigdg/react-enterprise-template/commit/11cee6d4e2f24eebe2d3eec3357d73eca7f9aa8c)
+
+-   ⑩ Mobx react lite optimization ✅ [feat: ✨ Add the use and optimization of observer and observer in mobx react lite](https://github.com/guokaigdg/react-enterprise-template/commit/fe5620b4281e49d44cb25a945a6ba04f125f3f29)
+
+-   ⑪ Add UI design materials ✅ [docs: 📝 Update development design reference documents](https://github.com/guokaigdg/react-enterprise-template/commit/a75a6a705a0e2367dbfcef5e5d562e72b63057df)
 
 ## ⌛️ Install project dependencies
 
@@ -84,6 +91,7 @@ npm run build:prod  // Production environment
 | Branch | description        |
 | ------ | ------------------ |
 | main   | Main branch        |
+| deploy | demo deploy        |
 | dev    | Development branch |
 
 ## Code submission specification
@@ -168,6 +176,10 @@ merge     🔀 Merge branches
 
 -   📬 If you have any questions, please open an issue or leave a message
 -   🧙‍♀️ Welcome all contributors, come to Issus or submit Pull Requests to become a contributor
+
+## ⭐️ Stargazers
+
+[![Stargazers repo roster for @guokaigdg/react-enterprise-template](https://reporoster.com/stars/guokaigdg/react-enterprise-template)](https://github.com/guokaigdg/react-enterprise-template/stargazers)
 
 ## 💡 Open Source License
 

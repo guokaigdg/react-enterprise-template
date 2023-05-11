@@ -5,7 +5,9 @@ import {StoresProvider, stores} from '@/store';
 import '@/assets/icons/index';
 import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement);
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement as HTMLDivElement);
+
 root.render(
     <BrowserRouter basename='react-enterprise-template'>
         <StoresProvider value={stores}>

@@ -51,6 +51,14 @@
 -   ⑥ React Hook 规则 ✅ 2023/3/2 日提交 [feat: ✨ 新增 react hooks 规则检查](https://github.com/guokaigdg/react-enterprise-template/commit/15346c07a9ffd74f69dd1bb0dd6a4a42aa72df57)
 -   ⑦ 封装全局 SVG 组件 ✅ 2023/3/6 日提交 [feat: ✨ 封装全局 SVG 组件](https://github.com/guokaigdg/react-enterprise-template/commit/066fc6ff28c1ac3b0d6422ebda8d59cdf9275d3a)
 
+-   ⑧ 移动端适配 ✅ [feat: ✨  增加移动端适配方案: postcss-px-to-viewport](https://github.com/guokaigdg/react-enterprise-template/commit/78b10e2d0bada75f4043eaa43aecffb2973fd357)
+
+-   ⑨ Mobx 使用区别说明 ✅ [feat: ✨  增加 makeObservable 与 makeAutoObservable 说明与使用示例](https://github.com/guokaigdg/react-enterprise-template/commit/11cee6d4e2f24eebe2d3eec3357d73eca7f9aa8c)
+
+-   ⑩ mobx-react-lite 优化 ✅ [feat: ✨  新增 mobx-react-lite 中 observer 与 Observer 使用与优化](https://github.com/guokaigdg/react-enterprise-template/commit/fe5620b4281e49d44cb25a945a6ba04f125f3f29)
+
+-   ⑪ 新增 UI 设计资料 ✅ [docs: 📝  更新开发设计资料参考文档](https://github.com/guokaigdg/react-enterprise-template/commit/a75a6a705a0e2367dbfcef5e5d562e72b63057df)
+
 ## ⌛️ 安装项目依赖
 
 ```
@@ -84,6 +92,7 @@ npm run build:prod  // 线上环境
 | --------------- | -------------- |
 | main            | 主分支         |
 | dev             | 开发分支       |
+| deploy          | demo 部署分支  |
 | mobile-template | 移动端模板分支 |
 
 ## 代码提交规范
@@ -167,6 +176,10 @@ merge     🔀 合并分支
 
 -   📬 有问题直接 issues 或者留言
 -   🧙‍♀️ 欢迎所有的贡献者，快来 Issus 或 Pull requests 成为贡献者吧
+
+## ⭐️ Stargazers
+
+[![Stargazers repo roster for @guokaigdg/react-enterprise-template](https://reporoster.com/stars/guokaigdg/react-enterprise-template)](https://github.com/guokaigdg/react-enterprise-template/stargazers)
 
 ## 💡 开源协议
 
