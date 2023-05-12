@@ -1386,6 +1386,11 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@phosphor-icons/react@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.npmmirror.com/@phosphor-icons/react/-/react-2.0.9.tgz#9b720dfe35ed9cb75fa0c59921bbc98acf483b45"
+  integrity sha512-/dtQ0M9MXAr35wy8zPlwF684EvYRvGWZPAv+Bd0BR4vzIhjzfLBdHSovFxSP1rj3UOHvVR08qgRL04Kv90oqHA==
+
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"
   resolved "https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"

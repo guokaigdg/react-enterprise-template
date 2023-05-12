@@ -61,6 +61,9 @@
 
 ## ⌛️ Install project dependencies
 
+-   `npm` >= 6.14.x
+-   `node` >= 16.30.x
+
 ```
 npm
 $ npm install

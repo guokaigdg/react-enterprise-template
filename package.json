@@ -109,6 +109,7 @@
         "webpackbar": "^5.0.2"
     },
     "dependencies": {
+        "@phosphor-icons/react": "^2.0.9",
         "axios": "^1.3.3",
         "axios-retry": "^3.4.0",
         "mobx": "^6.8.0",
