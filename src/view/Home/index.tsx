@@ -8,6 +8,7 @@ import {
     IceCream,
     InstagramLogo,
     FileTsx,
+    GithubLogo,
     GameController
 } from '@phosphor-icons/react';
 import {Button} from '@/components';
@@ -45,6 +46,11 @@ function Home() {
     return (
         <div className='home-root'>
             <div className='home-tab'>
+                <div className='github-icon'>
+                    <a href='https://github.com/guokaigdg/react-enterprise-template'>
+                        <GithubLogo size={52} color='#f9f4da' />
+                    </a>
+                </div>
                 {MenuLink.map((item: LinkItem) => (
                     <div key={item.name} className='btn-wrap'>
                         <Button
