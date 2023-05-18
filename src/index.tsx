@@ -9,7 +9,7 @@ const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement as HTMLDivElement);
 
 root.render(
-    <BrowserRouter basename='react-enterprise-template'>
+    <BrowserRouter>
         <StoresProvider value={stores}>
             <App />
         </StoresProvider>
