@@ -1,12 +1,13 @@
+# https://editorconfig.org/
 root = true
 
 [*]
-indent_style = space
-indent_size = 4
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
+indent_style = space              # 指定缩进的风格，可以是 tab 或 space。
+indent_size = 4                   # 缩进大小, 定义缩进的大小，可以是一个正整数。
+end_of_line = lf                  # 指定换行符的类型，可以是 lf（Unix/Linux），cr（旧版 Mac），或 crlf（Windows）。
+charset = utf-8                   # 指定文件的字符编码，通常为 utf-8。
+trim_trailing_whitespace = true   # 指定是否删除行尾的空白字符。
+insert_final_newline = true       # 指定文件末尾是否插入空行。
 
 [*.md]
 trim_trailing_whitespace = false
