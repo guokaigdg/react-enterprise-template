@@ -4,7 +4,7 @@
  */
 
 import http from '../http';
-import {pokemonOptions} from '@/interface/http';
+import {pokemonOptions, orderData} from '@/interface/http';
 
 /**
  * @function get
@@ -13,18 +13,21 @@ import {pokemonOptions} from '@/interface/http';
 
 export function fetchPokemon(data: pokemonOptions) {
     return http({
-        url: ' https://pokeapi.co/api/v2/pokemon',
+        url: 'https://pokeapi.co/api/v2/pokemon',
         params: data
     });
 }
+
 /**
- * @function post
- * @description 请求测试
+ * @function fetchPostOrder
+ * @description  查询订单请求
  */
 
-export function fetchPostTest(data: any) {
+export function fetchPostOrder(data: orderData) {
+    const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+    const TARGET_API_URL = 'http://api.iatkb.com/order/check';
     return http({
-        url: '/xxx/list',
+        url: `${CORS_PROXY_URL}${TARGET_API_URL}`,
         method: 'post',
         data
     });
