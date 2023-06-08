@@ -52,7 +52,7 @@ const prodConfig = {
             automaticNameDelimiter: '-', // 生成名称的分隔符
             chunks: 'all', // all-所有模块生效，async-抽取异步模块，initial:同步模块生效
             // minSize: 100000, //  todo, 后续还有性能问题再拆, 生成 chunk 的最小体积（以 bytes 为单位）。
-            // maxSize: 40000, // todo, 后续还有性能问题再拆, 生成 chunk 的最大体积（以 bytes 为单位）。
+            // maxSize: 244000, // todo, 后续还有性能问题再拆, 生成 chunk 的最大体积（以 bytes 为单位）。
             cacheGroups: {
                 commons: {
                     test: /[/\\]node_modules[/\\]/,
