@@ -11,8 +11,8 @@
 
 ## 🔗 在线 Demo
 
--   在线预览 [react-enterprise-template](https://guokaigdg.github.io/react-enterprise-template/)
--   在线预览（移动端） [react-template-mobile](https://guokaigdg.github.io/react-template-mobile/)
+-   在线预览 (PC 端) [react-enterprise-template](https://guokaigdg.github.io/react-enterprise-template/)
+-   在线预览（移动端） [react-template-mobile](https://github.com/guokaigdg/react-template-mobile)
 
 ## 👨🏻‍💻 项目说明
 

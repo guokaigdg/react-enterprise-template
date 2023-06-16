@@ -55,13 +55,16 @@ const prodConfig = {
             // maxSize: 244000, // todo, 后续还有性能问题再拆, 生成 chunk 的最大体积（以 bytes 为单位）。
             cacheGroups: {
                 commons: {
-                    test: /[/\\]node_modules[/\\]/,
-                    name: 'vendors',
-                    chunks: 'all'
+                    test: /[/\\]node_modules[/\\]/, // 只筛选从node_modules文件夹下引入的模块
+                    name: 'commons',
+                    chunks: 'all',
+                    minSize: 0, // 分离前最小模块大小，默认为0，最小为30000
+                    maxInitialRequests: 3, //最大初始化加载次数，一个入口文件可以并行加载的最大文件数量，默认3
+                    priority: -10 // 优先级, 先vendors引用包, 再找本地包,  因为default 权重小于vendors
                 },
                 // 抽离自定义工具库
                 utilCommon: {
-                    name: 'common',
+                    name: 'util-common',
                     minSize: 0, // 将引用模块分离成新代码文件的最小体积
                     minChunks: 2, // 表示将引用模块如不同文件引用了多少次，才能分离生成新chunk
                     priority: -20 // 优先级

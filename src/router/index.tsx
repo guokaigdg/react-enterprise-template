@@ -6,16 +6,16 @@ import React from 'react';
 import SuspenseLazy from '@/components/SuspenseLazy';
 import {Navigate, RouteObject} from 'react-router-dom';
 
-const Home = SuspenseLazy(() => import(/* webpackChunkName:"" */ '@/view/Home'));
-const HomeOne = SuspenseLazy(() => import(/* webpackChunkName:"homeOne" */ '@/view/Home/HomeOne'));
-const HomeTwo = SuspenseLazy(() => import(/* webpackChunkName:"homeTwo" */ '@/view/Home/HomeTwo'));
-const HomeThree = SuspenseLazy(() => import(/* webpackChunkName:"HomeThree" */ '@/view/Home/HomeThree'));
-const HomeFour = SuspenseLazy(() => import(/* webpackChunkName:"HomeFour" */ '@/view/Home/HomeFour'));
-const HomeMobx = SuspenseLazy(() => import(/* webpackChunkName:"HomeMobx" */ '@/view/Home/HomeMobx'));
-const HomeIcon = SuspenseLazy(() => import(/* webpackChunkName:"HomeIcon" */ '@/view/Home/HomeIcon'));
+const Home = SuspenseLazy(() => import(/* webpackChunkName:"home" */ '@/view/Home'));
+const HomeOne = SuspenseLazy(() => import(/* webpackChunkName:"home-one" */ '@/view/Home/HomeOne'));
+const HomeTwo = SuspenseLazy(() => import(/* webpackChunkName:"home-two" */ '@/view/Home/HomeTwo'));
+const HomeThree = SuspenseLazy(() => import(/* webpackChunkName:"home-three" */ '@/view/Home/HomeThree'));
+const HomeFour = SuspenseLazy(() => import(/* webpackChunkName:"home-four" */ '@/view/Home/HomeFour'));
+const HomeMobx = SuspenseLazy(() => import(/* webpackChunkName:"home-mobx" */ '@/view/Home/HomeMobx'));
+const HomeIcon = SuspenseLazy(() => import(/* webpackChunkName:"home-icon" */ '@/view/Home/HomeIcon'));
 const Dashboard = SuspenseLazy(() => import(/* webpackChunkName:"dashboard" */ '@/view/Dashboard'));
 const About = SuspenseLazy(() => import(/* webpackChunkName:"about" */ '@/view/About'));
-const NotFound = SuspenseLazy(() => import(/* webpackChunkName:"about" */ '@/view/NotFound'));
+const NotFound = SuspenseLazy(() => import(/* webpackChunkName:"not-found" */ '@/view/NotFound'));
 
 const routes: RouteObject[] = [
     {
