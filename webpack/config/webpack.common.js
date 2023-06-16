@@ -159,8 +159,23 @@ const config = {
             }
         }),
         new PreloadWebpackPlugin({
-            rel: 'prefetch', // 预加载
-            include: ['dashboard', 'about']
+            rel: 'preload',
+            include: ['home', 'home-two'] // chunks显示命名: 对应 @/router/index.tsx 中 webpackChunkName 名字
+        }),
+        new PreloadWebpackPlugin({
+            // rel: 'preload',
+            rel: 'prefetch',
+            /**
+             * 预加载的模块:
+             * asyncChunks：异步模块对应生成的chunk文件；
+             * allChunks：所有的chunk文件(vendor, async, and normal chunks)；
+             * initial：entry项对应生成的chunk文件；
+             * allAssets：所有chunk文件 + loaders生成的文件；
+             * [文件name]：如果chunks是显示命名的，可以使用这种
+             */
+            // excludeHtmlNames: ['example.html'],
+            // include: 'asyncChunks' // chunks显示命名
+            include: ['dashboard', 'about'] // chunks显示命名: 对应 @/router/index.tsx 中 webpackChunkName 名字
         })
     ]
 };
