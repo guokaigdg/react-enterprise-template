@@ -3,8 +3,8 @@
  * 宝可梦api https://pokeapi.co/about
  */
 
-import http from '../http';
-import {pokemonOptions, orderData} from '@/interface/http';
+import client from './client';
+import {pokemonOptions} from './type';
 
 /**
  * @function get
@@ -12,8 +12,8 @@ import {pokemonOptions, orderData} from '@/interface/http';
  */
 
 export function fetchPokemon(data: pokemonOptions) {
-    return http({
-        url: 'https://pokeapi.co/api/v2/pokemon',
+    return client({
+        url: ' https://pokeapi.co/api/v2/pokemon',
         params: data
     });
 }
@@ -23,11 +23,9 @@ export function fetchPokemon(data: pokemonOptions) {
  * @description  查询订单请求
  */
 
-export function fetchPostOrder(data: orderData) {
-    const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
-    const TARGET_API_URL = 'http://api.iatkb.com/order/check';
-    return http({
-        url: `${CORS_PROXY_URL}${TARGET_API_URL}`,
+export function fetchPostTest(data: any) {
+    return client({
+        url: '/xxx/list',
         method: 'post',
         data
     });
