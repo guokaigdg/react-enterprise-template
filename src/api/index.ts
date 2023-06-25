@@ -4,7 +4,7 @@
  */
 
 import client from './client';
-import {pokemonOptions} from './type';
+import {pokemonOptions, orderData} from './type';
 
 /**
  * @function get
@@ -17,15 +17,16 @@ export function fetchPokemon(data: pokemonOptions) {
         params: data
     });
 }
-
 /**
  * @function fetchPostOrder
  * @description  查询订单请求
  */
 
-export function fetchPostTest(data: any) {
+export function fetchPostOrder(data: orderData) {
+    const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+    const TARGET_API_URL = 'http://api.iatkb.com/order/check';
     return client({
-        url: '/xxx/list',
+        url: `${CORS_PROXY_URL}${TARGET_API_URL}`,
         method: 'post',
         data
     });
