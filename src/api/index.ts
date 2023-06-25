@@ -3,8 +3,8 @@
  * 宝可梦api https://pokeapi.co/about
  */
 
-import http from '../http';
-import {pokemonOptions} from '@/interface/http';
+import client from './client';
+import {pokemonOptions} from './type';
 
 /**
  * @function get
@@ -12,7 +12,7 @@ import {pokemonOptions} from '@/interface/http';
  */
 
 export function fetchPokemon(data: pokemonOptions) {
-    return http({
+    return client({
         url: ' https://pokeapi.co/api/v2/pokemon',
         params: data
     });
@@ -23,7 +23,7 @@ export function fetchPokemon(data: pokemonOptions) {
  */
 
 export function fetchPostTest(data: any) {
-    return http({
+    return client({
         url: '/xxx/list',
         method: 'post',
         data

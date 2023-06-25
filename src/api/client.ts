@@ -1,9 +1,3 @@
-/*
- * @Author: guokai05
- * @Date: 2023-02-19 22:31:15
- * @LastEditors: guokai05
- * @LastEditTime: 2023-02-21 16:18:27
- */
 import axios from 'axios';
 import axiosRetry from 'axios-retry';
 import {InternalAxiosRequestConfig, AxiosRequestConfig, AxiosResponse, AxiosError} from 'axios';
