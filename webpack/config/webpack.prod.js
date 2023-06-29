@@ -28,14 +28,8 @@ const prodConfig = {
             test: /\.js$|\.html$|.\css/, // 匹配文件名
             threshold: 10240, // 对超过10k的数据压缩
             deleteOriginalAssets: false // 不删除源文件
-        }),
-        shouldOpenAnalyzer &&
-            new BundleAnalyzerPlugin({
-                analyzerMode: 'server',
-                analyzerHost: ANALYZER_HOST,
-                analyzerPort: ANALYZER_PORT
-            })
-    ].filter(Boolean),
+        })
+    ],
     optimization: {
         // 允许你通过提供一个或多个定制过的 TerserPlugin 实例， 覆盖默认压缩工具(minimizer)
         minimizer: [
@@ -73,5 +67,15 @@ const prodConfig = {
         }
     }
 };
+
+if (shouldOpenAnalyzer) {
+    prodConfig.plugins.push(
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'server',
+            analyzerHost: ANALYZER_HOST,
+            analyzerPort: ANALYZER_PORT
+        })
+    );
+}
 
 module.exports = merge(commonConfig, prodConfig);

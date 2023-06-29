@@ -1,5 +1,5 @@
 const Webpack = require('webpack');
-const ErrorOverlayPlugin = require('error-overlay-webpack-plugin'); // 这个插件将在你的应用程序中定位显示出错信息
+// const ErrorOverlayPlugin = require('error-overlay-webpack-plugin'); // 这个插件将在你的应用程序中定位显示出错信息
 const {merge} = require('webpack-merge'); // Webpack合并函数
 const commonConfig = require('./webpack.common.js');
 const paths = require('../paths');
@@ -26,7 +26,7 @@ const devConfig = {
         },
         historyApiFallback: true // 单页面配置appProxySetup
     },
-    plugins: [new Webpack.HotModuleReplacementPlugin(), new ErrorOverlayPlugin()],
+    plugins: [new Webpack.HotModuleReplacementPlugin()],
     optimization: {
         minimize: false, //关闭压缩
         minimizer: [],

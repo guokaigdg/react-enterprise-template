@@ -6,7 +6,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin'); //
 const CopyPlugin = require('copy-webpack-plugin'); // 将已存在的单个文件或整个目录复制到生成目录
 const webpack = require('webpack');
 const paths = require('../paths');
-const {isDevelopment, isProduction} = require('../env');
+const {isDevelopment} = require('../env');
 const {imageInlineSizeLimit, imageBase64Path, shouldBase64FromFileEnd} = require('../conf');
 
 const cssLoaders = (importLoaders) => [
@@ -26,7 +26,7 @@ const cssLoaders = (importLoaders) => [
             postcssOptions: {
                 plugins: [
                     require('postcss-flexbugs-fixes'), // 用于修复一些和 flex 布局相关的 bug
-                    isProduction && [
+                    [
                         'postcss-preset-env', // 最新的 CSS 语法转换为目标环境的浏览器能够理解的 CSS 语法，目的是使开发者不用考虑浏览器兼容问题。
                         {
                             // 使用 autoprefixer 来自动添加浏览器头
@@ -36,8 +36,9 @@ const cssLoaders = (importLoaders) => [
                             },
                             stage: 3
                         }
-                    ]
-                ].filter(Boolean)
+                    ],
+                    'postcss-normalize'
+                ]
             }
         }
     }
