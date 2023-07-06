@@ -1,5 +1,6 @@
 import {makeAutoObservable, runInAction} from 'mobx';
-import {fetchPokemon} from '@/api';
+import {fetchPokemon} from '@/api/home-two';
+import {fetchPostOrder} from '@/api/home-order';
 import {pokemonOptions} from '@/interface/http';
 
 class Global {
@@ -10,6 +11,7 @@ class Global {
     count = 0;
     name = 'react';
     data: any = [];
+    orderData: any = [];
     loading = true;
 
     addCount = () => {
@@ -27,6 +29,50 @@ class Global {
             // 只是异步操作在修改属性时，需要将赋值操作放到 runInAction 中。
             runInAction(() => {
                 this.data = results;
+                this.loading = false;
+            });
+        } catch (err) {
+            console.log(err);
+            runInAction(() => {
+                this.loading = false;
+            });
+        }
+    };
+    getPostOrder = async (params: any) => {
+        this.loading = true;
+        try {
+            const result: any = await fetchPostOrder(params);
+            // const result = {
+            //     orders: [
+            //         {
+            //             id: 1,
+            //             qq: '2333333',
+            //             ver: [
+            //                 // '\u9633\u6781\u94f6 \u5927\u95e8\u7259',
+            //                 // '\n\u9ea6\u65cb\u98ce \u5c0f\u95e8\u7259',
+            //                 // '\n\u9ea6\u65cb\u98ce \u5c0f\u95e8\u7259',
+            //                 '阳极银',
+            //                 '麦旋风',
+            //                 '陨石灰',
+            //                 '葵花黄',
+            //                 '亚麻',
+            //                 '闪白',
+            //                 '闪红',
+            //                 '浅蓝',
+            //                 '浅粉',
+            //                 '浅绿'
+            //             ],
+            //             phone: '111****233'
+            //         }
+            //     ],
+            //     result: 'OK'
+            // };
+            const {orders, result: newResult} = result;
+            if (newResult === 'Fail') {
+                console.log('请求结果出错');
+            }
+            runInAction(() => {
+                this.orderData = orders;
                 this.loading = false;
             });
         } catch (err) {

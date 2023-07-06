@@ -1,11 +1,13 @@
 import React, {ReactNode, useState} from 'react';
 import {useNavigate, Outlet, useLocation} from 'react-router-dom';
+import CX from 'classnames';
 import {observer} from 'mobx-react-lite';
 import {
     IconContext,
     GlobeHemisphereEast,
     HardDrives,
     IceCream,
+    Keyboard,
     InstagramLogo,
     FileTsx,
     GithubLogo,
@@ -35,7 +37,8 @@ function Home() {
         {name: 'HomeThree', icon: <FileTsx />, link: '/home/three'},
         {name: 'Mobx 数据更新', icon: <HardDrives />, link: '/home/mobx'},
         {name: 'Phosphor 图标库', icon: <InstagramLogo />, link: '/home/four'},
-        {name: 'Svg 封装', icon: <IceCream />, link: '/home/icon'}
+        {name: 'Svg 封装', icon: <IceCream />, link: '/home/icon'},
+        {name: '订单查询', icon: <Keyboard />, link: '/home/order'}
     ];
 
     const handleClickLink = (link: string) => {
@@ -43,8 +46,12 @@ function Home() {
         navigate(link);
     };
 
+    const homeClasses = CX('home-root', {
+        'home-root-no-bg': activeLink === '/home/order'
+    });
+
     return (
-        <div className='home-root'>
+        <div className={homeClasses}>
             <div className='home-tab'>
                 <div className='github-icon'>
                     <a href='https://github.com/guokaigdg/react-enterprise-template'>

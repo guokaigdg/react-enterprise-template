@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer, useLocalObservable} from 'mobx-react-lite';
 import {Button} from '@/components';
-import {fetchPokemon} from '@/api';
+import {fetchPokemon} from '@/api/home-two/index';
 
 const ObserverComponents = () => {
     /**

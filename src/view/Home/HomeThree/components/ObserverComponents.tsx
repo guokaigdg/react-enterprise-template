@@ -1,7 +1,7 @@
 import React from 'react';
 import {Observer, useLocalObservable} from 'mobx-react-lite';
 import {Button} from '@/components';
-import {fetchPokemon} from '@/api';
+import {fetchPokemon} from '@/api/home-two';
 
 const ObserverHoc = () => {
     /**
