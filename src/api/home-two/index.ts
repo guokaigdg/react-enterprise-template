@@ -4,15 +4,15 @@
  */
 
 import request from '../request';
-import {pokemonOptions} from './types/home-two';
+import {GetRequestPokemonDataType, GetResponsePokemonData} from './types/home-two';
 
 /**
  * @function get
  * @description 请求测试
  */
 
-export function fetchPokemon(data: pokemonOptions) {
-    return request({
+export function fetchPokemon(data: GetRequestPokemonDataType) {
+    return request<GetResponsePokemonData>({
         url: ' https://pokeapi.co/api/v2/pokemon',
         params: data
     });

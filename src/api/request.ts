@@ -1,6 +1,6 @@
 import axios from 'axios';
 import axiosRetry from 'axios-retry';
-import {InternalAxiosRequestConfig, AxiosRequestConfig, AxiosResponse, AxiosError} from 'axios';
+import {type AxiosInstance, InternalAxiosRequestConfig, AxiosRequestConfig, AxiosResponse, AxiosError} from 'axios';
 const whiteRetry = new Set(['ECONNABORTED', undefined, 0]);
 // import {baseURL} from '@/utils/variable';
 
@@ -34,36 +34,32 @@ axiosRetry(serviceAxios, {
 // 请求拦截器
 serviceAxios.interceptors.request.use(
     (config: InternalAxiosRequestConfig) => {
+        console.log('全局请求拦截器: 成功');
         return config;
     },
     (err: AxiosError) => {
+        console.log('全局请求拦截器: 处理请求错误');
         return Promise.reject(err);
     }
 );
 
 // 响应拦截器
 serviceAxios.interceptors.response.use(
-    (res: AxiosResponse) => {
-        return res;
+    (response: AxiosResponse) => {
+        console.log('全局响应拦截器: 成功');
+        return response;
     },
     (err: AxiosError) => {
+        console.log('全局响应拦截器: 处理响应错误');
         return Promise.reject(err);
     }
 );
 
 // 统一发起请求的函数
-async function request<T>(options: AxiosRequestConfig) {
-    try {
-        const response = await serviceAxios.request<T>(options);
-        const {status, data} = response;
-        // 处理 HTTP 状态码
-        if (status < 200 || status >= 500) {
-            return Promise.reject();
-        }
-        return Promise.resolve(data);
-    } catch (error) {
-        return Promise.reject(error);
-    }
+function createRequest(service: AxiosInstance) {
+    return function <T>(config: AxiosRequestConfig): Promise<T> {
+        return service(config);
+    };
 }
 
-export default request;
+export default createRequest(serviceAxios);

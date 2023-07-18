@@ -1,7 +1,8 @@
 import {makeAutoObservable, runInAction} from 'mobx';
 import {fetchPokemon} from '@/api/home-two';
 import {fetchPostOrder} from '@/api/home-order';
-import {pokemonOptions} from '@/interface/http';
+import {GetRequestPokemonDataType, GetPokemonDataType, GetResponsePokemonData} from '@/api/home-two/types/home-two';
+import {GetRequestOrderDataType, GetOrderDataType, GetResponseOrdereData} from '@/api/home-order/types/home-order';
 
 class Global {
     constructor() {
@@ -10,8 +11,8 @@ class Global {
     }
     count = 0;
     name = 'react';
-    data: any = [];
-    orderData: any = [];
+    data: GetPokemonDataType[] = [];
+    orderData: GetOrderDataType[] = [];
     loading = true;
 
     addCount = () => {
@@ -21,10 +22,10 @@ class Global {
         this.name = data;
     };
 
-    getFetchGetTest = async (params: pokemonOptions) => {
+    getFetchGetTest = async (params: GetRequestPokemonDataType) => {
         try {
-            const result: any = await fetchPokemon(params);
-            const {results} = result;
+            const res: GetResponsePokemonData = await fetchPokemon(params);
+            const {results} = res.data;
             // 在 MobX 中，不管是同步还是异步操作，都可以放到 action 中，
             // 只是异步操作在修改属性时，需要将赋值操作放到 runInAction 中。
             runInAction(() => {
@@ -38,10 +39,10 @@ class Global {
             });
         }
     };
-    getPostOrder = async (params: any) => {
+    getPostOrder = async (params: GetRequestOrderDataType) => {
         this.loading = true;
         try {
-            const result: any = await fetchPostOrder(params);
+            const res: GetResponseOrdereData = await fetchPostOrder(params);
             // const result = {
             //     orders: [
             //         {
@@ -67,8 +68,8 @@ class Global {
             //     ],
             //     result: 'OK'
             // };
-            const {orders, result: newResult} = result;
-            if (newResult === 'Fail') {
+            const {orders, result} = res.data;
+            if (result === 'Fail') {
                 console.log('请求结果出错');
             }
             runInAction(() => {
