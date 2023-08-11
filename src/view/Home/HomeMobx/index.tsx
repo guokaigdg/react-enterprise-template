@@ -25,6 +25,7 @@ const HomeMobx = () => {
             <p> aboutStore: {aboutCount}</p>
             <div>
                 <Button onClick={handleClickAddCount}>Mobx数据更新-addCount</Button>
+                <span className='mobx-block'></span>
                 <Button onClick={handleClickSetName}>Mobx数据更新-setName</Button>
             </div>
         </div>

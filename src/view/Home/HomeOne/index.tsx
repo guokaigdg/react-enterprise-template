@@ -38,6 +38,7 @@ const HomeOne = () => {
                 </Card>
                 <Card>
                     <Button onClick={store.increment}> +1 </Button>
+                    <span className='block'></span>
                     <Button onClick={store.decrement}> -1 </Button>
                 </Card>
             </div>
