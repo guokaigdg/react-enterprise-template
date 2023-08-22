@@ -49,7 +49,8 @@ const prodConfig = {
             // maxSize: 244000, // todo, 后续还有性能问题再拆, 生成 chunk 的最大体积（以 bytes 为单位）。
             cacheGroups: {
                 commons: {
-                    test: /[/\\]node_modules[/\\]/, // 只筛选从node_modules文件夹下引入的模块
+                    // test: /[/\\]node_modules[/\\]/, // 只筛选从node_modules文件夹下引入的模块
+                    test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
                     name: 'commons',
                     chunks: 'all',
                     minSize: 0, // 分离前最小模块大小，默认为0，最小为30000
