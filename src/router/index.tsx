@@ -21,7 +21,7 @@ const NotFound = SuspenseLazy(() => import(/* webpackChunkName:"not-found" */ '@
 const routes: RouteObject[] = [
     {
         path: '/',
-        element: <Navigate to='home/two' /> // 重定向
+        element: <Navigate to='home/one' /> // 重定向
     },
     {
         path: 'home',
