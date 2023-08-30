@@ -49,11 +49,12 @@ const config = {
         app: paths.appIndex
     },
     cache: {
-        // 缓存,cache.type 设置为 'filesystem' 是会开放更多的可配置项。
-        // 收集在反序列化期间分配的未使用的内存，, 仅当 cache.type 设置为 'filesystem' 时生效。这需要将数据复制到更小的缓冲区中，并有性能成本。
+        // 缓存 cache.type 设置为 'filesystem' 会开放更多的可配置项.
         type: 'filesystem',
+        // 收集在反序列化期间分配的未使用的内存，, 仅当 cache.type 设置为 'filesystem' 时生效。这需要将数据复制到更小的缓冲区中，并有性能成本。
+        allowCollectingMemory: true,
+        // 是一个针对构建的额外代码依赖的数组对象。webpack 将使用这些项和所有依赖项的哈希值来使文件系统缓存失效。
         buildDependencies: {
-            // 是一个针对构建的额外代码依赖的数组对象。webpack 将使用这些项和所有依赖项的哈希值来使文件系统缓存失效。
             config: [__filename]
         }
     },
