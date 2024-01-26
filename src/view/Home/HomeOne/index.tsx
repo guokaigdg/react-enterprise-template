@@ -3,6 +3,12 @@ import {observer, useLocalObservable} from 'mobx-react-lite';
 import {Button, Card} from '@/components';
 import './index.less';
 
+interface HomeOneType {
+    count: number;
+    increment: () => void;
+    decrement: () => void;
+}
+
 const HomeOne = () => {
     /**
      * 关于 useLocalObservable
@@ -10,7 +16,7 @@ const HomeOne = () => {
      * 2. 可以使局部的状态更加清晰。
      * 3. 代码更加简洁，避免在顶层创建全局的 observable 对象，提高了组件的可维护性和可重用性。
      */
-    const store = useLocalObservable(() => ({
+    const store = useLocalObservable<HomeOneType>(() => ({
         count: 0,
         increment() {
             this.count++;
