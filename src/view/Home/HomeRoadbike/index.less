@@ -1,0 +1,125 @@
+.home-bike {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    color: #f9f4da;
+    background-color: #333;
+    border-radius: 10px;
+
+    .order-title {
+        height: 100px;
+        margin-top: 100px;
+        color: #f9f4da;
+        font-weight: 900;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .control-content {
+        position: fixed;
+        top: 200px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        color: #2b2b2b;
+        font-size: 20px;
+        background: #f9f4da;
+        border-radius: 15px;
+    }
+
+    .logo-root {
+        display: flex;
+        height: 70px;
+        background-color: #fff;
+
+        .logo-shimano {
+            width: 100px;
+        }
+    }
+
+    .search-wrap{
+        display: flex;
+        justify-content: space-around;
+        width: 550px;
+        height: 100px;
+
+        .select-wrap {
+            height: 80px;
+        }
+    }
+
+    .img-root {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 100%;
+        background-color: #f0f5e5;
+        border-radius: 10px;
+
+        .img-icon{
+            width: 180px;
+        }
+
+        .img-icon-sram{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .bike-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+
+        .bike-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height:  30px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+            .name {
+                position: absolute;
+                left: -150px;
+                color: #9ea0a5;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            .weight {
+
+            }
+
+            .difference {
+                position: absolute;
+                right: -150px;
+                color: #f9f4da;
+                font-weight: 600;
+            }
+        }
+
+        .win-weight {
+            color: #0c0c0c;
+            background-color: #a9d44d
+        }
+
+    }
+}
+
+

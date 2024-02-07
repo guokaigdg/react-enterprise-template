@@ -126,6 +126,7 @@
     },
     "dependencies": {
         "@phosphor-icons/react": "^2.0.9",
+        "antd": "^5.12.3",
         "axios": "^1.4.0",
         "axios-retry": "^3.4.0",
         "mobx": "^6.9.0",

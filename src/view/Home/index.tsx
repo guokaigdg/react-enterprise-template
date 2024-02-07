@@ -11,6 +11,7 @@ import {
     InstagramLogo,
     FileTsx,
     GithubLogo,
+    PersonSimpleBike,
     GameController
 } from '@phosphor-icons/react';
 import {Button} from '@/components';
@@ -38,7 +39,8 @@ function Home() {
         {name: 'Mobx 数据更新', icon: <HardDrives />, link: '/home/mobx'},
         {name: 'Phosphor 图标库', icon: <InstagramLogo />, link: '/home/four'},
         {name: 'Svg 封装', icon: <IceCream />, link: '/home/icon'},
-        {name: '订单查询', icon: <Keyboard />, link: '/home/order'}
+        {name: '订单查询', icon: <Keyboard />, link: '/home/order'},
+        {name: '套件重量查询', icon: <PersonSimpleBike />, link: '/home/road-bike'}
     ];
 
     const handleClickLink = (link: string) => {
