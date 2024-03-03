@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Select, Button} from '@/components';
-import {ShimanoOptionList, SramOptionList, ShimanoData, SramData} from './data';
+import {ShimanoSramOptionList, ShimanoSramData} from './data';
 import CX from 'classnames';
 import './index.less';
 
@@ -24,14 +24,14 @@ const HomeOne = () => {
     const handleChangeShimano = (e: eventType) => {
         const neme = e.target.value;
         if (neme) {
-            const res = ShimanoData[neme];
+            const res = ShimanoSramData[neme];
             setShimanoChooseItem(res);
         }
     };
     const handleChangeSram = (e: eventType) => {
         const neme = e.target.value;
         if (neme) {
-            const res = SramData[neme];
+            const res = ShimanoSramData[neme];
             setSramChooseItem(res);
         }
     };
@@ -45,8 +45,8 @@ const HomeOne = () => {
     };
 
     useEffect(() => {
-        setShimanoChooseItem(ShimanoData.R9270);
-        setSramChooseItem(SramData.RedeTapAXSHRD);
+        setShimanoChooseItem(ShimanoSramData.R9270);
+        setSramChooseItem(ShimanoSramData.RedeTapAXSHRD);
     }, []);
 
     return (
@@ -79,7 +79,7 @@ const HomeOne = () => {
                 <div>
                     {/* <div className='logo-root'>Shimano</div> */}
                     <div className='select-wrap'>
-                        <Select defaultValue='R9270' data={ShimanoOptionList} onChange={handleChangeShimano} />
+                        <Select defaultValue='R9270' data={ShimanoSramOptionList} onChange={handleChangeShimano} />
                     </div>
                     <div className='img-root'>
                         {shimanoChooseItem && <img alt='' className='img-icon' src={shimanoChooseItem.img} />}
@@ -105,7 +105,7 @@ const HomeOne = () => {
                 </div>
                 <div>
                     <div className='select-wrap'>
-                        <Select defaultValue='Red' data={SramOptionList} onChange={handleChangeSram} />
+                        <Select defaultValue='RedeTapAXSHRD' data={ShimanoSramOptionList} onChange={handleChangeSram} />
                     </div>
                     <div className='img-root'>
                         {sramChooseItem && <img alt='' className='img-icon img-icon-sram' src={sramChooseItem.img} />}

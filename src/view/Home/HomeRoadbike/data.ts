@@ -1,20 +1,3 @@
-// 下拉列表
-const ShimanoOptionList = [
-    {label: 'Dura-Ace R9270', value: 'R9270'},
-    {label: 'Dura-Ace R9170', value: 'R9170'},
-    {label: 'Ultegra R8170', value: 'R8170'},
-    {label: 'Ultegra R8070', value: 'R8070'},
-    {label: 'Ultegra R8020', value: 'R8020'},
-    {label: '105 R7170', value: 'R7170'},
-    {label: '105 R7020', value: 'R7020'}
-];
-const SramOptionList = [
-    {label: 'Red eTap AXS HRD', value: 'RedeTapAXSHRD'},
-    {label: 'Force eTap AXS HRD', value: 'ForceeTapAXSHRD'},
-    {label: 'Rival eTap AXS HRD', value: 'RivaleTapAXSHRD'},
-    {label: 'Force AXS HRD', value: 'ForceAXSHRD'}
-];
-
 // shimano
 import dura_aceDi2 from '@/assets/images/bike/dura_aceDi2.png';
 import dura_ace_r9100_y2017 from '@/assets/images/bike/dura_ace_r9100_y2017.png';
@@ -22,14 +5,27 @@ import ultegraDi2 from '@/assets/images/bike/ultegraDi2.png';
 import ultegra_r8000_y2018 from '@/assets/images/bike/ultegra_r8000_y2018.png';
 import R105Di2 from '@/assets/images/bike/105Di2.png';
 import R105_R7000_y2019 from '@/assets/images/bike/105_R7000_y2019.png';
-
 // sram
-
 import RedeTapAXSHRD from '@/assets/images/bike/RedeTapAXSHRD.png';
 import ForceeTapAXSHRD from '@/assets/images/bike/ForceeTapAXSHRD.png';
 import RivaleTapAXSHRD from '@/assets/images/bike/RivaleTapAXSHRD.png';
 
-const ShimanoData: {[key: string]: any} = {
+// 下拉列表
+const ShimanoSramOptionList = [
+    {label: 'Dura-Ace R9270 (⚡️)', value: 'R9270'},
+    {label: 'Ultegra R8170 (⚡️)', value: 'R8170'},
+    {label: '105 R7170 (⚡️)', value: 'R7170'},
+    {label: 'Dura-Ace R9170(⚡️)', value: 'R9170'},
+    {label: 'Ultegra R8070(⚡️)', value: 'R8070'},
+    {label: 'Ultegra R8020', value: 'R8020'},
+    {label: '105 R7020', value: 'R7020'},
+    {label: 'Red eTap AXS HRD (⚡️)', value: 'RedeTapAXSHRD'},
+    {label: 'Force eTap AXS HRD (⚡️)', value: 'ForceeTapAXSHRD'},
+    {label: 'Rival eTap AXS HRD (⚡️)', value: 'RivaleTapAXSHRD'}
+];
+
+// 详细数据表
+const ShimanoSramData: {[key: string]: any} = {
     R9270: {
         img: dura_aceDi2,
         data: [
@@ -68,6 +64,112 @@ const ShimanoData: {[key: string]: any} = {
             {
                 name: '大套总重',
                 weight: 2165
+            },
+            {
+                name: '牙盘齿数',
+                weight: '50-34T'
+            },
+            {
+                name: '曲柄长度',
+                weight: '170mm'
+            },
+            {
+                name: '飞轮齿数',
+                weight: '11-30T'
+            }
+        ]
+    },
+    R8170: {
+        img: ultegraDi2,
+        data: [
+            {
+                name: '手变',
+                weight: 403
+            },
+            {
+                name: '夹器',
+                weight: 327
+            },
+            {
+                name: '前拨',
+                weight: 111
+            },
+            {
+                name: '后拨',
+                weight: 260
+            },
+            {
+                name: '曲柄',
+                weight: 720
+            },
+            {
+                name: '链条',
+                weight: 252
+            },
+            {
+                name: '飞轮',
+                weight: 294
+            },
+            {
+                name: '小套总重',
+                weight: 1151
+            },
+            {
+                name: '大套总重',
+                weight: 2417
+            },
+            {
+                name: '牙盘齿数',
+                weight: '50-34T'
+            },
+            {
+                name: '曲柄长度',
+                weight: '170mm'
+            },
+            {
+                name: '飞轮齿数',
+                weight: '11-30T'
+            }
+        ]
+    },
+    R7170: {
+        img: R105Di2,
+        data: [
+            {
+                name: '手变',
+                weight: 423
+            },
+            {
+                name: '夹器',
+                weight: 331
+            },
+            {
+                name: '前拨',
+                weight: 142
+            },
+            {
+                name: '后拨',
+                weight: 302
+            },
+            {
+                name: '曲柄',
+                weight: 766
+            },
+            {
+                name: '链条',
+                weight: 252
+            },
+            {
+                name: '飞轮',
+                weight: 361
+            },
+            {
+                name: '小套总重',
+                weight: 1248
+            },
+            {
+                name: '大套总重',
+                weight: 2627
             },
             {
                 name: '牙盘齿数',
@@ -136,59 +238,6 @@ const ShimanoData: {[key: string]: any} = {
             }
         ]
     },
-    R8170: {
-        img: ultegraDi2,
-        data: [
-            {
-                name: '手变',
-                weight: 403
-            },
-            {
-                name: '夹器',
-                weight: 327
-            },
-            {
-                name: '前拨',
-                weight: 111
-            },
-            {
-                name: '后拨',
-                weight: 260
-            },
-            {
-                name: '曲柄',
-                weight: 720
-            },
-            {
-                name: '链条',
-                weight: 252
-            },
-            {
-                name: '飞轮',
-                weight: 294
-            },
-            {
-                name: '小套总重',
-                weight: 1151
-            },
-            {
-                name: '大套总重',
-                weight: 2417
-            },
-            {
-                name: '牙盘齿数',
-                weight: '50-34T'
-            },
-            {
-                name: '曲柄长度',
-                weight: '170mm'
-            },
-            {
-                name: '飞轮齿数',
-                weight: '11-30T'
-            }
-        ]
-    },
     R8070: {
         img: ultegra_r8000_y2018,
         data: [
@@ -247,92 +296,39 @@ const ShimanoData: {[key: string]: any} = {
         data: [
             {
                 name: '手变',
-                weight: 99999999
+                weight: 554
             },
             {
                 name: '夹器',
-                weight: 99999999
+                weight: 331
             },
             {
                 name: '前拨',
-                weight: 99999999
+                weight: 92
             },
             {
                 name: '后拨',
-                weight: 99999999
+                weight: 200
             },
             {
                 name: '曲柄',
-                weight: 99999999
+                weight: 674
             },
             {
                 name: '链条',
-                weight: 99999999
+                weight: 257
             },
             {
                 name: '飞轮',
-                weight: 99999999
+                weight: 251
             },
             {
                 name: '小套总重',
-                weight: 99999999
+                weight: 1177
             },
             {
                 name: '大套总重',
-                weight: 99999999
-            },
-            {
-                name: '牙盘齿数',
-                weight: '50-34T'
-            },
-            {
-                name: '曲柄长度',
-                weight: '170mm'
-            },
-            {
-                name: '飞轮齿数',
-                weight: '11-30T'
-            }
-        ]
-    },
-    R7170: {
-        img: R105Di2,
-        data: [
-            {
-                name: '手变',
-                weight: 99999999
-            },
-            {
-                name: '夹器',
-                weight: 99999999
-            },
-            {
-                name: '前拨',
-                weight: 99999999
-            },
-            {
-                name: '后拨',
-                weight: 99999999
-            },
-            {
-                name: '曲柄',
-                weight: 99999999
-            },
-            {
-                name: '链条',
-                weight: 99999999
-            },
-            {
-                name: '飞轮',
-                weight: 99999999
-            },
-            {
-                name: '小套总重',
-                weight: 99999999
-            },
-            {
-                name: '大套总重',
-                weight: 99999999
+                weight: 2359
             },
             {
                 name: '牙盘齿数',
@@ -353,39 +349,39 @@ const ShimanoData: {[key: string]: any} = {
         data: [
             {
                 name: '手变',
-                weight: 99999999
+                weight: 610
             },
             {
                 name: '夹器',
-                weight: 99999999
+                weight: 339
             },
             {
                 name: '前拨',
-                weight: 99999999
+                weight: 95
             },
             {
                 name: '后拨',
-                weight: 99999999
+                weight: 225
             },
             {
                 name: '曲柄',
-                weight: 99999999
+                weight: 713
             },
             {
                 name: '链条',
-                weight: 99999999
+                weight: 284
             },
             {
                 name: '飞轮',
-                weight: 99999999
+                weight: 257
             },
             {
                 name: '小套总重',
-                weight: 99999999
+                weight: 1269
             },
             {
                 name: '大套总重',
-                weight: 99999999
+                weight: 2523
             },
             {
                 name: '牙盘齿数',
@@ -400,20 +396,17 @@ const ShimanoData: {[key: string]: any} = {
                 weight: '11-30T'
             }
         ]
-    }
-};
-
-const SramData: {[key: string]: any} = {
+    },
     RedeTapAXSHRD: {
         img: RedeTapAXSHRD,
         data: [
             {
                 name: '手变',
-                weight: 467
+                weight: 283
             },
             {
                 name: '夹器',
-                weight: 303
+                weight: 267
             },
             {
                 name: '前拨',
@@ -425,15 +418,15 @@ const SramData: {[key: string]: any} = {
             },
             {
                 name: '曲柄',
-                weight: 577
+                weight: 561
             },
             {
                 name: '链条',
-                weight: 249
+                weight: 255
             },
             {
                 name: '飞轮',
-                weight: 183
+                weight: 211
             },
             {
                 name: '小套总重',
@@ -462,11 +455,11 @@ const SramData: {[key: string]: any} = {
         data: [
             {
                 name: '手变',
-                weight: 476
+                weight: 303
             },
             {
                 name: '夹器',
-                weight: 346
+                weight: 303
             },
             {
                 name: '前拨',
@@ -474,19 +467,19 @@ const SramData: {[key: string]: any} = {
             },
             {
                 name: '后拨',
-                weight: 301
+                weight: 326
             },
             {
                 name: '曲柄',
-                weight: 740
+                weight: 744
             },
             {
                 name: '链条',
-                weight: 259
+                weight: 269
             },
             {
                 name: '飞轮',
-                weight: 236
+                weight: 266
             },
             {
                 name: '小套总重',
@@ -515,11 +508,11 @@ const SramData: {[key: string]: any} = {
         data: [
             {
                 name: '手变',
-                weight: 99999999
+                weight: 810
             },
             {
                 name: '夹器',
-                weight: 99999999
+                weight: 0
             },
             {
                 name: '前拨',
@@ -562,60 +555,7 @@ const SramData: {[key: string]: any} = {
                 weight: '11-30T'
             }
         ]
-    },
-    ForceAXSHRD: {
-        img: R105_R7000_y2019,
-        data: [
-            {
-                name: '手变',
-                weight: 99999999
-            },
-            {
-                name: '夹器',
-                weight: 99999999
-            },
-            {
-                name: '前拨',
-                weight: 99999999
-            },
-            {
-                name: '后拨',
-                weight: 99999999
-            },
-            {
-                name: '曲柄',
-                weight: 99999999
-            },
-            {
-                name: '链条',
-                weight: 99999999
-            },
-            {
-                name: '飞轮',
-                weight: 99999999
-            },
-            {
-                name: '小套总重',
-                weight: 99999999
-            },
-            {
-                name: '大套总重',
-                weight: 99999999
-            },
-            {
-                name: '牙盘齿数',
-                weight: '50-34T'
-            },
-            {
-                name: '曲柄长度',
-                weight: '170mm'
-            },
-            {
-                name: '飞轮齿数',
-                weight: '11-30T'
-            }
-        ]
     }
 };
 
-export {ShimanoOptionList, SramOptionList, ShimanoData, SramData};
+export {ShimanoSramOptionList, ShimanoSramData};
