@@ -24,7 +24,7 @@
 
 -   项目创建教程 [《从 0 到 1 搭建一个 React 项目开发模板 》](https://juejin.cn/post/7223267430231326778)
 
-## 📱 特点
+##  ⚡️ 特性
 
 -   📦 开箱即用，无需配置
 -   📝 全面注释说明，学习低成本
@@ -44,7 +44,7 @@
 -   mobx-react-lite v3
 -   react-router-dom v6
 
-## 🎄 陆续新增内容：
+## 🎄 陆续更新内容：
 
 -   ① 样式 ✅ [config: 🔧  新增样式文件(css/less/sass/postCss)处理](https://github.com/guokaigdg/react-enterprise-template/commit/11fb415bac609dfa7474a1ee2db93ccb4a350a51)
 -   ② 代码规范 ✅ [config: 🔧  新增 Prettier/ESlint/StyleLint/EditorConfig 代码规范](https://github.com/guokaigdg/react-enterprise-template/commit/87dd1ca333f81203dd245a6eb40479a0745f096f)
@@ -69,11 +69,13 @@
 -   `yarn` >= 1.22.17
 
 ```
-npm
-$ npm install
-
+npm install
+```
+```
 yarn
-$ yarn
+```
+```
+pnpm install
 ```
 
 ## 🚀 运行项目
