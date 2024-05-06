@@ -17,3 +17,20 @@ export function fetchPokemon(data: GetRequestPokemonDataType) {
         params: data
     });
 }
+
+/**
+ * @function getJsonTest
+ * @description 请求测试 application/json
+ * @description 使用说明 https://juejin.cn/post/7365414174217404466
+ */
+
+export function getJsonTest(params: GetRequestPokemonDataType) {
+    return request({
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url: '/api/data/xxx',
+        params
+    });
+}
