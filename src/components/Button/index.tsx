@@ -1,10 +1,11 @@
-import React, {FC} from 'react';
+import React, {FC, CSSProperties} from 'react';
 import type {ButtonType} from './buttonHelpers';
 import CX from 'classnames';
 import './index.less';
 
 interface ButtonProps {
     className?: string;
+    style?: CSSProperties;
     type?: ButtonType;
     active?: boolean;
     children?: string | React.ReactNode;
@@ -12,7 +13,7 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = (props) => {
-    const {onClick, children, className, active, type = 'default', ...restProps} = props;
+    const {onClick, children, className, style, active, type = 'default', ...restProps} = props;
     const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
         (onClick as React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>)?.(e);
     };
@@ -26,7 +27,14 @@ const Button: FC<ButtonProps> = (props) => {
     );
 
     return (
-        <button className={classes} onClick={handleClick} {...restProps}>
+        <button
+            className={classes}
+            style={{
+                ...style
+            }}
+            onClick={handleClick}
+            {...restProps}
+        >
             {children}
         </button>
     );
