@@ -19,7 +19,8 @@ const ShimanoSramOptionList = [
     {label: 'Ultegra R8070(⚡️)', value: 'R8070'},
     {label: 'Ultegra R8020', value: 'R8020'},
     {label: '105 R7020', value: 'R7020'},
-    {label: 'Red eTap AXS HRD (⚡️)', value: 'RedeTapAXSHRD'},
+    {label: 'Red eTap AXS (2024) (⚡️)', value: 'RedeTapAXSHRD'},
+    {label: 'Red eTap AXS (2019) (⚡️)', value: 'OldRedeTapAXSHRD'},
     {label: 'Force eTap AXS HRD (⚡️)', value: 'ForceeTapAXSHRD'},
     {label: 'Rival eTap AXS HRD (⚡️)', value: 'RivaleTapAXSHRD'}
 ];
@@ -57,10 +58,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 223
             },
-            {
-                name: '小套总重',
-                weight: 1009
-            },
+
             {
                 name: '大套总重',
                 weight: 2165
@@ -110,10 +108,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 294
             },
-            {
-                name: '小套总重',
-                weight: 1151
-            },
+
             {
                 name: '大套总重',
                 weight: 2417
@@ -163,10 +158,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 361
             },
-            {
-                name: '小套总重',
-                weight: 1248
-            },
+
             {
                 name: '大套总重',
                 weight: 2627
@@ -216,10 +208,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 193
             },
-            {
-                name: '小套总重',
-                weight: 972
-            },
+
             {
                 name: '大套总重',
                 weight: 2026
@@ -269,10 +258,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 251
             },
-            {
-                name: '小套总重',
-                weight: 1113
-            },
+
             {
                 name: '大套总重',
                 weight: 2295
@@ -322,10 +308,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 251
             },
-            {
-                name: '小套总重',
-                weight: 1177
-            },
+
             {
                 name: '大套总重',
                 weight: 2359
@@ -375,10 +358,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 257
             },
-            {
-                name: '小套总重',
-                weight: 1269
-            },
+
             {
                 name: '大套总重',
                 weight: 2523
@@ -402,11 +382,61 @@ const ShimanoSramData: {[key: string]: any} = {
         data: [
             {
                 name: '手变',
-                weight: 283
+                weight: 403
             },
             {
                 name: '夹器',
-                weight: 267
+                weight: 293
+            },
+            {
+                name: '前拨',
+                weight: 169
+            },
+            {
+                name: '后拨',
+                weight: 286
+            },
+            {
+                name: '曲柄',
+                weight: 580
+            },
+            {
+                name: '链条',
+                weight: 236
+            },
+            {
+                name: '飞轮',
+                weight: 180
+            },
+
+            {
+                name: '大套总重',
+                weight: 2387
+            },
+            {
+                name: '牙盘齿数',
+                weight: '48-35T'
+            },
+            {
+                name: '曲柄长度',
+                weight: '170mm'
+            },
+            {
+                name: '飞轮齿数',
+                weight: '10-28T'
+            }
+        ]
+    },
+    OldRedeTapAXSHRD: {
+        img: RedeTapAXSHRD,
+        data: [
+            {
+                name: '手变',
+                weight: 467
+            },
+            {
+                name: '夹器',
+                weight: 320
             },
             {
                 name: '前拨',
@@ -418,7 +448,7 @@ const ShimanoSramData: {[key: string]: any} = {
             },
             {
                 name: '曲柄',
-                weight: 561
+                weight: 620
             },
             {
                 name: '链条',
@@ -426,15 +456,12 @@ const ShimanoSramData: {[key: string]: any} = {
             },
             {
                 name: '飞轮',
-                weight: 211
+                weight: 181
             },
-            {
-                name: '小套总重',
-                weight: 1246
-            },
+
             {
                 name: '大套总重',
-                weight: 2255
+                weight: 2519
             },
             {
                 name: '牙盘齿数',
@@ -481,10 +508,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 266
             },
-            {
-                name: '小套总重',
-                weight: 1304
-            },
+
             {
                 name: '大套总重',
                 weight: 2539
@@ -534,10 +558,7 @@ const ShimanoSramData: {[key: string]: any} = {
                 name: '飞轮',
                 weight: 283
             },
-            {
-                name: '小套总重',
-                weight: 1303
-            },
+
             {
                 name: '大套总重',
                 weight: 2717
