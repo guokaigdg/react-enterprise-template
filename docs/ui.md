@@ -1,4 +1,6 @@
 ## Web 配色工具「Aicolors」
+-   [Magic UI](https://magicui.design/)
+<img alt="Magic UI - UI Library for Design Engineers" src="https://cdn.magicui.design/bento-grid.gif" width="100%">
 
 -   [aicolors.co](https://aicolors.co/)
 

@@ -114,10 +114,9 @@ fix       🐛 Bug fix
 feature   ✨ Introduce new features
 docs      📝 Document writing changes
 prune     🔥 Remove code or files
-ui        💄 Update UI and style files
 perf      ⚡ Performance-related optimizations
 rocket    🚀 Deployment function
-style     🎨 Style modification
+style     💄 Style modification
 init      🎉 Initial submission
 release   🔖 Release version
 wip       🚧 Work in progress, and unstable submissions may occur

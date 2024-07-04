@@ -117,10 +117,9 @@ fix       🐛 Bug修复
 feature   ✨ 引入新特性
 docs      📝 文档书写改动
 prune     🔥 移除代码或文件
-ui        💄 更新UI和样式文件
 perf      ⚡ 性能相关优化
 rocket    🚀 部署功能
-style     🎨 style修改
+style     💄 style修改
 init      🎉 初始化提交
 release   🔖 发布版本
 wip       🚧 正在进行中, 且有可能出现不稳定运行的提交
