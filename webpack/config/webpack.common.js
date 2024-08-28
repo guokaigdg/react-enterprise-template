@@ -15,7 +15,9 @@ const cssLoaders = (importLoaders) => [
     {
         loader: 'css-loader', // 主要是解析css文件中的@import和url语句，处理css-modules，并将结果作为一个js模块返回
         options: {
-            modules: false,
+            //  modules默认值undefined: 为所有匹配 /\.module\.\w+$/i.test(filename) 与 /\.icss\.\w+$/i.test(filename) 正则表达式的文件启用 CSS 模块
+            //  详情参考 https://webpack.docschina.org/loaders/css-loader/
+            modules: undefined, // undefined / true / false / string / object
             sourceMap: isDevelopment, // 开发环境开启
             importLoaders // 执行顺序: 需要先被 less-loader postcss-loader (所以这里设置为 2)
         }

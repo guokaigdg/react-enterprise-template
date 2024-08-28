@@ -4,7 +4,7 @@ import {runInAction} from 'mobx';
 import {GetResponsePokemonData} from '@/api/home-two/types/home-two';
 import {GithubLogo} from '@phosphor-icons/react';
 import {fetchPokemon} from '@/api/home-two';
-import './index.less';
+import styles from './index.module.less';
 
 interface StoreType {
     pokemon: string;
@@ -48,10 +48,11 @@ const About = () => {
     }, []);
 
     return (
-        <div className='about-root'>
+        <div className={styles.aboutRoot}>
             <a href='https://github.com/guokaigdg/react-enterprise-template'>
                 <GithubLogo size={68} color='#f9f4da' />
             </a>
+            <div className={styles.header}> 恭喜开启 less + css modules 模式 </div>
             <p>Hello About</p>
             {dataState === 'LOADING' && <div>LOADING</div>}
             {dataState === 'SUCCESS' && <div>SUCCESS {pokemon}</div>}
