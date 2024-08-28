@@ -21,13 +21,16 @@ class Global {
     };
 
     getFetchGetTest = async (params: pokemonOptions) => {
+        runInAction(() => {
+            this.loading = true;
+        });
         try {
             const result: any = await fetchPokemon(params);
             const {results} = result;
             // 在 MobX 中，不管是同步还是异步操作，都可以放到 action 中，
             // 只是异步操作在修改属性时，需要将赋值操作放到 runInAction 中。
             runInAction(() => {
-                this.data = results;
+                this.data = [...this.data, ...results];
                 this.loading = false;
             });
         } catch (err) {
