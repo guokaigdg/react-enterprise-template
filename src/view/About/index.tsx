@@ -4,7 +4,7 @@ import {runInAction} from 'mobx';
 import {GetResponsePokemonData} from '@/api/home-two/types/home-two';
 import {GithubLogo} from '@phosphor-icons/react';
 import {fetchPokemon} from '@/api/home-two';
-import styles from './index.module.less';
+import * as styles from './index.module.less';
 
 interface StoreType {
     pokemon: string;
