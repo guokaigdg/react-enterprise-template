@@ -127,7 +127,7 @@ const HomeOne = () => {
                                     </span>
                                     {isDifference && !['牙盘齿数', '曲柄长度', '飞轮齿数'].includes(item.name) && (
                                         <span className='difference'>
-                                            {item.weight - shimanoChooseItem.data[index].weight}g
+                                            {item.weight - shimanoChooseItem.data[index].weight || 'xxx '}g
                                         </span>
                                     )}
                                 </div>

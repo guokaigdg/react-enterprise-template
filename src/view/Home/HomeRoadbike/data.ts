@@ -9,9 +9,12 @@ import R105_R7000_y2019 from '@/assets/images/bike/105_R7000_y2019.png';
 import RedeTapAXSHRD from '@/assets/images/bike/RedeTapAXSHRD.png';
 import ForceeTapAXSHRD from '@/assets/images/bike/ForceeTapAXSHRD.png';
 import RivaleTapAXSHRD from '@/assets/images/bike/RivaleTapAXSHRD.png';
+//
+import magene_qed from '@/assets/images/bike/logo-magene.jpg';
 
 // 下拉列表
 const ShimanoSramOptionList = [
+    {label: '迈金 QED (⚡️)', value: 'QED'},
     {label: 'Dura-Ace R9270 (⚡️)', value: 'R9270'},
     {label: 'Ultegra R8170 (⚡️)', value: 'R8170'},
     {label: '105 R7170 (⚡️)', value: 'R7170'},
@@ -27,6 +30,56 @@ const ShimanoSramOptionList = [
 
 // 详细数据表
 const ShimanoSramData: {[key: string]: any} = {
+    QED: {
+        img: magene_qed,
+        data: [
+            {
+                name: '手变',
+                weight: 436
+            },
+            {
+                name: '夹器',
+                weight: 330
+            },
+            {
+                name: '前拨',
+                weight: 103
+            },
+            {
+                name: '后拨',
+                weight: 245
+            },
+            {
+                name: '曲柄',
+                weight: 'xxx'
+            },
+            {
+                name: '链条',
+                weight: 'xxx'
+            },
+            {
+                name: '飞轮',
+                weight: 'xxx'
+            },
+
+            {
+                name: '大套总重',
+                weight: 'xxx'
+            },
+            {
+                name: '牙盘齿数',
+                weight: '50-34T'
+            },
+            {
+                name: '曲柄长度',
+                weight: '170mm'
+            },
+            {
+                name: '飞轮齿数',
+                weight: '11-30T'
+            }
+        ]
+    },
     R9270: {
         img: dura_aceDi2,
         data: [
