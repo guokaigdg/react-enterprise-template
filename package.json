@@ -125,8 +125,8 @@
         "@phosphor-icons/react": "^2.0.14",
         "axios": "^1.6.0",
         "axios-retry": "^3.8.1",
-        "mobx": "^6.10.2",
-        "mobx-react-lite": "^3.4.3",
+        "mobx": "^6.13.5",
+        "mobx-react-lite": "^4.1.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-router-dom": "^6.18.0"
