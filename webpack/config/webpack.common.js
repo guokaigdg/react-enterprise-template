@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 简化 HTML 文件创建以服务捆绑包的插件, 将js文件自动引进 html 文件中
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 抽离css文件, 这个插件将CSS取到单独的文件中。它为每个包含CSS的JS文件创建一个CSS文件。它支持按需加载 CSS 和 SourceMaps。
 const WebpackBar = require('webpackbar'); // 优雅的 Webpack 进度条和分析器
-const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin'); // 启动本地服务/打包错误提示
 const CopyPlugin = require('copy-webpack-plugin'); // 将已存在的单个文件或整个目录复制到生成目录
 const webpack = require('webpack');
@@ -161,25 +160,6 @@ const config = {
             typescript: {
                 configFile: paths.appTsConfig
             }
-        }),
-        new PreloadWebpackPlugin({
-            rel: 'preload',
-            include: ['home', 'home-two'] // chunks显示命名: 对应 @/router/index.tsx 中 webpackChunkName 名字
-        }),
-        new PreloadWebpackPlugin({
-            // rel: 'preload',
-            rel: 'prefetch',
-            /**
-             * 预加载的模块:
-             * asyncChunks：异步模块对应生成的chunk文件；
-             * allChunks：所有的chunk文件(vendor, async, and normal chunks)；
-             * initial：entry项对应生成的chunk文件；
-             * allAssets：所有chunk文件 + loaders生成的文件；
-             * [文件name]：如果chunks是显示命名的，可以使用这种
-             */
-            // excludeHtmlNames: ['example.html'],
-            // include: 'asyncChunks' // chunks显示命名
-            include: ['dashboard', 'about'] // chunks显示命名: 对应 @/router/index.tsx 中 webpackChunkName 名字
         })
     ]
 };
