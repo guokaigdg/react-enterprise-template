@@ -1,3 +1,5 @@
+
+
 {
     "css.validate": false,
     "less.validate": false,
@@ -17,6 +19,7 @@
         "source.fixAll.eslint": "explicit",
         "source.fixAll.stylelint": "explicit"
     },
+    "stylelint.validate": ["css", "less", "scss"],
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
