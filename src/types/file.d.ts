@@ -27,3 +27,8 @@ declare module '*.png' {
     const floorURLpath: string;
     export default path;
 }
+
+declare module '*.avif' {
+    const path: string;
+    export default path;
+}
