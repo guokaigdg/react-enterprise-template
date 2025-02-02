@@ -1,5 +1,5 @@
 import React, {ReactNode, useState} from 'react';
-import {useNavigate, Outlet, useLocation} from 'react-router-dom';
+import {useNavigate, Outlet, useLocation} from 'react-router';
 import CX from 'classnames';
 import {observer} from 'mobx-react-lite';
 import {

@@ -20,11 +20,11 @@
 
 -   react 模板, 一个比 CRA 更丰富的模板
 
--   开发配置文档说明 [React18 + webpack5 + TypeScript4 + react-router-dom + Mobx](https://juejin.cn/post/7197790401495121977)
+-   开发配置文档说明 [React18 + webpack5 + TypeScript4 + react-router + Mobx](https://juejin.cn/post/7197790401495121977)
 
 -   项目创建教程 [《从 0 到 1 搭建一个 React 项目开发模板 》](https://juejin.cn/post/7223267430231326778)
 
-##  ⚡️ 特性
+## ⚡️ 特性
 
 -   📦 开箱即用，无需配置
 -   📝 全面注释说明，学习低成本
@@ -33,7 +33,7 @@
 
 ## 🚀 技术栈
 
-[![react](https://img.shields.io/badge/react-19.0.0-brightgreen.svg)](https://github.com/facebook/react/) [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.4-brightgreen.svg)](https://github.com/microsoft/TypeScript)[![webpack](https://img.shields.io/badge/webpack-5.75.0-brightgreen.svg)](https://github.com/facebook/react/) [![axios](https://img.shields.io/badge/axios-0.18.0-brightgreen.svg)](https://github.com/axios/axios) [![mobx](https://img.shields.io/badge/mobx-6.8.0-brightgreen.svg)](https://github.com/mobx) [![react-router-dom](https://img.shields.io/badge/react--router--dom-6.8.1-brightgreen.svg)](https://github.com/remix-run/react-router) [![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)]()
+[![react](https://img.shields.io/badge/react-19.0.0-brightgreen.svg)](https://github.com/facebook/react/) [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.4-brightgreen.svg)](https://github.com/microsoft/TypeScript)[![webpack](https://img.shields.io/badge/webpack-5.75.0-brightgreen.svg)](https://github.com/facebook/react/) [![axios](https://img.shields.io/badge/axios-0.18.0-brightgreen.svg)](https://github.com/axios/axios) [![mobx](https://img.shields.io/badge/mobx-6.8.0-brightgreen.svg)](https://github.com/mobx) [![react-router](https://img.shields.io/badge/react--router-7.1.5-brightgreen.svg)](https://github.com/remix-run/react-router) [![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)]()
 
 -   React v19
 -   react-dom v19
@@ -42,7 +42,7 @@
 -   axios v1
 -   mobx v6
 -   mobx-react-lite v3
--   react-router-dom v6
+-   react-router v7
 
 ## 🎄 陆续更新内容：
 
@@ -62,7 +62,7 @@
 
 -   新增 UI 设计资料 ✅ [docs: 📝  更新开发设计资料参考文档](https://github.com/guokaigdg/react-enterprise-template/commit/a75a6a705a0e2367dbfcef5e5d562e72b63057df)
 
--   现代化的CSS样式重置 ✅ [style: 🎨 A Modern CSS Reset 现代化的CSS样式重置](https://github.com/guokaigdg/react-enterprise-template/commit/71568e774862fb7430a48f2447ecb6f31b53078b)
+-   现代化的 CSS 样式重置 ✅ [style: 🎨 A Modern CSS Reset 现代化的 CSS 样式重置](https://github.com/guokaigdg/react-enterprise-template/commit/71568e774862fb7430a48f2447ecb6f31b53078b)
 
 ## ⌛️ 安装项目依赖
 
@@ -73,9 +73,11 @@
 ```
 npm install
 ```
+
 ```
 yarn
 ```
+
 ```
 pnpm install
 ```

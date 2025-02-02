@@ -1,10 +1,10 @@
 /*
- * react-router-dom v6 官方文档
- * https://reactrouter.com/en/v6.3.0/getting-started/installation
+ * react-router 官方文档
+ * https://reactrouter.com/7.1.5/upgrading/v6
  */
 import React from 'react';
 import SuspenseLazy from '@/components/SuspenseLazy';
-import {Navigate, RouteObject} from 'react-router-dom';
+import {Navigate, RouteObject} from 'react-router';
 
 const Home = SuspenseLazy(() => import(/* webpackChunkName:"home" */ '@/view/Home'));
 const HomeOne = SuspenseLazy(() => import(/* webpackChunkName:"home-one" */ '@/view/Home/HomeOne'));
