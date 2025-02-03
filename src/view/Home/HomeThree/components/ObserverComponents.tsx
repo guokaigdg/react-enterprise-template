@@ -2,6 +2,7 @@ import React from 'react';
 import {Observer, useLocalObservable} from 'mobx-react-lite';
 import {Button} from '@/components';
 import {fetchPokemon} from '@/api/home-two';
+import {runInAction} from 'mobx';
 
 const ObserverHoc = () => {
     /**
@@ -23,9 +24,11 @@ const ObserverHoc = () => {
         async onFetchPokemon() {
             this.loading = true;
             const result: any = await fetchPokemon({limit: 100});
-            const {results} = result;
-            this.list = results;
-            this.loading = false;
+            const {results} = result.data;
+            runInAction(() => {
+                this.list = results;
+                this.loading = false;
+            });
         },
         onChange(item: {name: string; url: string}) {
             // 点击某个条目时，修改该条目的 name，还记得 mobx 使用的是同一份数据吗，这里的更改能影响到列表的数据
