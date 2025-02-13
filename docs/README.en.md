@@ -181,6 +181,7 @@ merge     🔀 Merge branches
 
 -   📬 If you have any questions, please open an issue or leave a message
 -   🧙‍♀️ Welcome all contributors, come to Issus or submit Pull Requests to become a contributor
+-   🙋 [Learn how to contribute code](https://n7j2qc9z43.feishu.cn/docx/HAu9d1PCuo12Cvxrlelc0eEWnNc?from=from_copylink)
 
 ## ⭐️ Stargazers
 

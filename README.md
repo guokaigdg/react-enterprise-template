@@ -187,6 +187,7 @@ merge     🔀 合并分支
 
 -   📬 有问题直接 issues 或者留言
 -   🧙‍♀️ 欢迎所有的贡献者，快来 Issus 或 Pull requests 成为贡献者吧
+-   🙋 [查看如何贡献代码](https://n7j2qc9z43.feishu.cn/docx/HAu9d1PCuo12Cvxrlelc0eEWnNc?from=from_copylink)
 
 ## 💡 开源协议
 
