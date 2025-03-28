@@ -9,6 +9,10 @@
     简体中文 | <a href="./docs/README.en.md">English</a>
 </p>
 
+## ⚡️ Vite 版本
+
+- react-template-vite: https://github.com/guokaigdg/react-template-vite
+
 ## 🔗 在线 Demo
 
 -   在线预览 (PC 端) [react-enterprise-template](https://guokaigdg.github.io/react-enterprise-template/)
@@ -24,7 +28,7 @@
 
 -   项目创建教程 [《从 0 到 1 搭建一个 React 项目开发模板 》](https://juejin.cn/post/7223267430231326778)
 
-## ⚡️ 特性
+## 🪅 特性
 
 -   📦 开箱即用，无需配置
 -   📝 全面注释说明，学习低成本
